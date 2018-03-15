@@ -1,0 +1,68 @@
+/* This CSS File contains the rules that are applied when the page is printed to paper */
+
+@page{
+  margin: 2.5cm 2.5cm;
+}
+
+@media only print {
+
+        /* General page elements */
+
+        html {
+                font-size: 10pt;
+        }
+
+        body {
+                margin: 0 !important;
+                width: calc(210mm - 5cm);
+        }
+
+        p, nav, h2, h3, h4 {
+                max-width: 40rem;
+                margin-left: auto;
+                margin-right: auto;
+        }
+
+        a {
+                color: black;
+        }
+
+        /* Workshop header */
+
+        header {
+                margin: 0;
+                margin-bottom: 1cm;
+        }
+
+        header #logo {
+                width: 3cm;
+                height: 3cm;
+
+                display: block;
+                margin: 0 auto;
+        }
+
+        #downloadlink {
+                max-width: 40rem;
+
+                font-size: 0.75rem;
+                padding: 0.25rem 0;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+        }
+
+        /* Table of contents */
+
+        .contents > a, .contents > li {
+                color: black;
+        }
+
+        /* Code Blocks */
+
+        .codeblock {
+                border: 1px solid rgb(205, 128, 255);
+                background-color: rgba(250, 242, 255, 0);
+        }
+
+
+}

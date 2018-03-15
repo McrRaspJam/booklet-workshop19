@@ -1,0 +1,98 @@
+/* This CSS File contains the rules that are shared in both print and web format
+ *
+ * See print.css and web.css for rules that belong to the respective format
+ */
+
+
+
+@font-face {
+        font-family: Oswald;
+        src: url('Oswald-Regular.ttf');
+        font-weight: normal;
+}
+
+/* General page elements */
+
+html, body {
+        margin: 0;
+
+        font-family: sans-serif;
+}
+
+h1, h2 {
+        color:#e5286d;
+}
+
+a {
+        text-decoration: none;
+}
+
+p {
+        text-align: justify;
+}
+
+/* Workshop header */
+
+header #mcrraspjam, header #title {
+        display: block;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+
+        font-family: Oswald, sans-serif;
+}
+
+header #mcrraspjam {
+        font-size: 2.5rem;
+        color: #e5286d;
+        text-decoration: none;
+        font-weight: normal;
+        margin-top: 0.25rem;
+}
+
+header #title {
+        font-size: 1.5rem;
+        color: #777;
+        font-weight: lighter;
+        margin-top: -0.25rem;
+        margin-bottom: 0.75rem;
+}
+
+/* Table of Contents */
+
+.contents {
+        margin: 1rem 0;
+        padding-left: 4ch;
+}
+
+.contents > a, .contents > li {
+        margin-top: 0.5rem;
+        font-weight: bold;
+}
+
+.subcontents {
+        margin: 0;
+        padding-left: 4ch;
+        list-style-type:lower-roman;
+}
+
+/* Code Blocks */
+
+.codeblock {
+        width: 40rem;
+        margin: 1rem auto;
+
+        padding: 1rem;
+        border-radius: 1rem;
+        border: 2px solid rgb(230, 192, 255);
+        background-color: rgb(250, 242, 255);
+}
+
+.codetag {
+        color: red;
+}
+
+.codecomment {
+        font-style: italic;
+        color: grey;
+}

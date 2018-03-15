@@ -1,0 +1,46 @@
+/* This CSS File contains the rules that are applied when the page is viewew in a web browser */
+
+
+@media only screen {
+
+        /* General page elements */
+
+        html {
+                font-size: 14pt;
+        }
+
+        p, nav, h2, h3, h4 {
+                max-width: 32rem;
+                margin-left: auto;
+                margin-right: auto;
+        }
+
+        section {
+                margin: 5rem 0;
+        }
+
+
+        /* Workshop header */
+
+        header {
+                margin: 2rem 0;
+        }
+
+        header #logo {
+                width: 10rem;
+                height: 10rem;
+
+                display: block;
+                margin: 0 auto;
+        }
+
+        #downloadlink {
+                display: none;
+        }
+
+        /* Table of contents */
+
+        .contents > a, .contents > li {
+                color: black;
+        }
+}
