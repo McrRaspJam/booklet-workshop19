@@ -92,7 +92,7 @@ header #title {
 /* Images */
 
 .autoimage {
-        width: 40rem;
+        width: 36rem;
         max-width: 90vw;
         display: block;
         margin: 1rem auto;
@@ -115,7 +115,7 @@ header #title {
 /* Code Blocks */
 
 .codeblock {
-        width: 40rem;
+        width: 36rem;
         margin: 2rem auto;
 
         padding: 1rem;
