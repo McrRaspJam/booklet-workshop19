@@ -6,6 +6,10 @@
 
 @media only print {
 
+        .hideinprint {
+                display: none;
+        }
+
         /* General page elements */
 
         html {
