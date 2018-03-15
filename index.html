@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
         <head>
+                <meta charset="UTF-8">
                 <title>Workshop 19: HTML & CSS</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
                 <link rel="stylesheet" type="text/css" href="css/common.css" />
                 <link rel="stylesheet" type="text/css" href="css/print.css" />
                 <link rel="stylesheet" type="text/css" href="css/web.css" />
         </head>
         <body>
                 <header>
-                        <img id="logo" src="css/logo_300p.png" />
+                        <img id="logo" src="css/logo_300p.png" alt="Manchester Raspberry Jam Logo"/>
                         <a id="mcrraspjam" href="http://www.mcrraspjam.org.uk" target="_blank">Manchester Raspberry Jam</a>
                         <h1 id="title">Workshop 19: HTML & CSS</h1>
                 </header>
@@ -16,20 +18,23 @@
                         <div id="downloadlink">
                                 This booklet is available online at <a href="https://mcrraspjam.github.io/booklet-workshop19/" target="_blank">mcrraspjam.github.io/booklet-workshop19</a> (HTML) or <a href="http://bit.ly/mcrraspjam" target="_blank">bit.ly/mcrraspjam</a> (PDF)
                         </div>
+
+                        <!-- Introduction -->
+
                         <section id="contents">
+                                <h2>Contents</h2>
                                 <p>This workshop will teach you how to create basic web pages using HTML and CSS.</p>
                                 <p>Difficulty: Intermediate workshop</p>
                                 <nav>
-                                        <p style="font-weight:bold">Table of Contents</p>
                                         <ol class="contents" start="0">
-                                                <a href="#introduction"><li>Introduction</li></a>
-                                                <a href="#helloworld"><li>Hello, World!</li></a>
-                                                <a href="#"><li>Draw the rest of the website</li></a>
-                                                <ol class="subcontents">
-                                                        <li>some HTML</li>
-                                                        <li>some CSS</li>
-                                                        <li>some more CSS</li>
-                                                </ol>
+                                                <li><a href="#introduction">Introduction</a></li>
+                                                <li><a href="#helloworld">Hello, World!</a>
+                                                        <ol class="subcontents">
+                                                                <li><a href="#helloworld-html">Writing the content with HTML</a></li>
+                                                                <li><a href="#helloworld-css">Changing the look with CSS</a></li>
+                                                        </ol>
+                                                </li>
+                                                <li><a href="#">Draw the rest of the website</a></li>
                                         </ol>
                                 </nav>
                         </section>
@@ -41,15 +46,12 @@
                                 <p>The aim of these booklets is to help you attempt these workshops at home, and to explain concepts in more detail than at the workshop. You don't need to follow these booklets during the workshop, but you can if you'd like to.</p>
                                 <p>When you need to make changes to your code, they'll be presented in <em>listings</em> like the example below:</p>
 
-<pre class="codeblock"><code>&lt;!DOCTYPE html&gt;
-&lt;<span class="codetag">html</span>&gt;
-        &lt;<span class="codetag">head</span>&gt;
-                <span class="codecomment">&lt;!-- HTML head --&gt;</span>
-        &lt;<span class="codetag">/head</span>&gt;
-        &lt;<span class="codetag">body</span>&gt;
-                <span class="codecomment">&lt;!-- HTML body --&gt;</span>
-        &lt;<span class="codetag">/body</span>&gt;
-&lt;<span class="codetag">/html</span>&gt;
+<pre class="codeblock"><code><span class="codetag">&lt;head&gt;</span>
+        <span class="codecomment">&lt;!-- HTML head --&gt;</span>
+<span class="codetag">&lt;/head&gt;</span>
+<span class="codetag">&lt;body&gt;</span>
+        <span class="codecomment">&lt;!-- HTML body --&gt;</span>
+<span class="codetag">&lt;/body&gt;</span>
 </code></pre>
 
                                 <h3>What you'll need</h3>
@@ -60,19 +62,117 @@
                                 <p>To allow modification and redistribution of these booklets, they are distributed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a> License.</p>
                                 <p>If you get stuck, find errors or have feedback about these booklets, please email me at: <a href="mailto:jam@jackjkelly.com">jam@jackjkelly.com</a></p>
                         </section>
+
+                        <!-- Hello, World! -->
+
                         <section id="helloworld">
                                 <h2>Hello, World!</h2>
-                                <p>
+                                <p>Boot your computer to the desktop. If you're using a Raspberry Pi that does not log in automatically, the default login is:</p>
+                                <p><b>username:</b> pi<br /> <b>password:</b> raspberry</p>
+                                <p>Once at the desktop, open the text editor of your choice. We will be using <em>Geany</em>, which can be found in the application menu of Raspbian under <span class="monospace">Programming → Geany IDE</span></p>
+                                <figure class="autoimage">
+                                        <img src="img/geany.png" alt="The Geany IDE window" />
+                                        <p>The Geany IDE window (shown on Windows 10)</p>
+                                </figure>
+                                <p>The Geany IDE window will open, with a new file already opened. <b>Click</b> <span class="monospace">File → Save As...</span> and save the empty file inside the workshop 19 folder <span class="monospace">~/McrRaspJam/Workshop 19/helloworld/</span> with the name <span class="monospace">helloworld.html</span></p>
+                                <h3 id="helloworld-html">Writing the content with HTML</h3>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id diam in magna auctor mollis quis sit amet sapien. Sed tortor augue, suscipit sed feugiat et, mattis eget leo. Donec ut mi lacus. Sed mollis in lorem sit amet interdum. Aliquam semper rutrum turpis id dictum. Vivamus id aliquam lorem, sit amet sodales nisl. Proin varius blandit ex, id consectetur sapien mattis sit amet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce elementum lacus in sagittis facilisis. Donec euismod convallis imperdiet. Sed dignissim quam mi, at convallis nibh hendrerit et. In varius diam sem, posuere semper purus porta vestibulum. Fusce arcu mi, hendrerit in eros sit amet, elementum ornare urna. Maecenas laoreet felis consectetur, efficitur orci in, tincidunt purus. Nunc libero velit, luctus non iaculis sit amet, bibendum vel risus. Fusce porta purus sed libero posuere ultrices.
+                                <p>HTML is a <em>markup language</em>, which means that it determines the content of a webpage. The following code creates a very simple webpage with a single text message:</p>
 
-Nam aliquam maximus ante, in malesuada leo iaculis sit amet. Maecenas eros turpis, dignissim ac sem ac, bibendum rutrum turpis. Integer nibh tortor, aliquet eu ante vitae, efficitur elementum libero. Sed sit amet massa odio. Praesent neque velit, posuere sit amet quam in, dapibus luctus ligula. Sed ac purus eros. Nam placerat nibh dui, id finibus lectus efficitur id. Suspendisse congue lorem velit, at egestas sapien condimentum quis. Integer interdum dapibus nulla, eu dapibus sapien mattis mollis.
+<pre class="codeblock"><code><span class="codetag">&lt;html&gt;</span>
+        <span class="codetag">&lt;head&gt;</span>
+                <span class="codetag">&lt;title&gt;</span>Hello, World!<span class="codetag">&lt;/title&gt;</span>
+        <span class="codetag">&lt;/head&gt;</span>
+        <span class="codetag">&lt;body&gt;</span>
+                Hello, World!
+        <span class="codetag">&lt;/body&gt;</span>
+<span class="codetag">&lt;/html&gt;</span>
+</code></pre>
 
-Mauris luctus vehicula consectetur. Fusce id laoreet sapien, a mollis ex. Vivamus a tempor diam, ut feugiat purus. Vivamus magna odio, porta interdum erat nec, ultrices pulvinar lorem. Suspendisse quis dapibus tortor. Quisque tellus nisl, tincidunt sed rhoncus eu, aliquam a enim. Quisque eleifend vitae libero vitae maximus.
+                                <p>You can try opening the .html file in a web browser now, and you should see 'Hello, World!' appear on screen in the tab that opens.</p>
+                                <p>Some additional information about the type of webpage should also be added. It's not too important to know what these changes do yet, but they'll be present in all of our HTML documents.</p>
 
-Integer venenatis suscipit diam vel tincidunt. In mollis convallis leo eu aliquam. In odio libero, eleifend id fermentum vitae, tincidunt a nibh. Morbi orci purus, aliquam imperdiet turpis euismod, consequat efficitur dolor. Nulla congue, orci sit amet consequat tempor, orci orci cursus urna, ut vestibulum enim odio luctus dui. Cras ornare massa a tellus volutpat venenatis. Duis consectetur lacinia gravida. Donec scelerisque metus nec tincidunt lobortis. Nunc in nisl sed magna dapibus aliquam. Phasellus rutrum tellus ut metus ultrices auctor. Donec condimentum, elit ut viverra malesuada, lacus augue molestie diam, ac imperdiet ipsum leo in felis. Maecenas malesuada posuere dolor at ultrices. Nam varius justo at malesuada faucibus. Sed venenatis, nulla at aliquet posuere, arcu mi ultrices ligula, id venenatis ipsum purus at arcu. Donec sollicitudin egestas dapibus. Donec mollis nibh et velit ullamcorper, in varius velit pretium.
+<pre class="codeblock"><code>&lt;!DOCTYPE html&gt;
+<span class="codetag">&lt;html lang=<span class="codestring">"en"</span>&gt;</span>
+        <span class="codetag">&lt;head&gt;</span>
+                <span class="codetag">&lt;meta charset=<span class="codestring">"UTF-8"</span>&gt;</span>
+                <span class="codetag">&lt;title&gt;</span>Hello, World!<span class="codetag">&lt;/title&gt;</span>
+        <span class="codetag">&lt;/head&gt;</span>
+        <span class="codetag">&lt;body&gt;</span>
+                Hello, World!
+        <span class="codetag">&lt;/body&gt;</span>
+<span class="codetag">&lt;/html&gt;</span>
+</code></pre>
 
-Mauris condimentum eget enim in consequat. Nullam finibus lacus eget fringilla eleifend. Interdum et malesuada fames ac ante ipsum primis in faucibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc commodo ac eros quis pulvinar. Integer ut lacus sit amet massa dignissim congue. Aenean nisi elit, elementum vel nisi ac, gravida venenatis enim. Morbi placerat massa vel lacus commodo facilisis sit amet quis dui. Proin facilisis erat sit amet gravida condimentum. Proin nec rhoncus magna. Morbi ante ex, condimentum a interdum vel, imperdiet in tellus. Nunc sed posuere purus. </p>
+                                <h4>What the code means</h4>
+
+                                <p>Let's go over the code we just wrote line-by-line, and see what everything does. Following the first line (which just tells any program reading the file what it is) we have our first tag, called html.</p>
+
+<pre class="codeblock"><code><span class="codetag">&lt;html lang=<span class="codestring">"en"</span>&gt;</span>
+        ...
+<span class="codetag">&lt;/html&gt;</span>
+</code></pre>
+                                <p>Tags almost always come in pairs. The first <span class="monospace">&lt;html&gt;</span> opens the tag, and the second, which has a /, closes the tag. We know that anything between these tags is part of the HTML code of our webpage.</p>
+
+<pre class="codeblock"><code>        <span class="codetag">&lt;head&gt;</span>
+                ...
+        <span class="codetag">&lt;/head&gt;</span>
+        <span class="codetag">&lt;body&gt;</span>
+                ...
+        <span class="codetag">&lt;/body&gt;</span>
+</code></pre>
+
+                                <p>Next, we have two sets of tags, <span class="monospace">&lt;head&gt;</span> and <span class="monospace">&lt;body&gt;</span>. The 'head' elements of the page are anything which <em>won't</em> be drawn on the screen, whereas the <em>body</em> element should all appear visually on the page.</p>
+                                <p>The text 'Hello, World!' has been placed inside the <span class="monospace">&lt;body&gt;</span> tag, so it appears on screen.
+<!-- <pre class="codeblock"><code><span class="codetag">                &lt;title&gt;</span>Hello, World!<span class="codetag">&lt;/title&gt;</span></code></pre> -->
+                                <p>Given that <span class="monospace">&lt;title&gt;Hello, World!&lt;/title&gt;</span> therefore does not appear on the webpage itself, what do you think it does. Once you've made a guess, try changing it, then save and reload the page and see what changes.</p>
+
+                                <h3 id="helloworld-css">Changing the look with CSS</h3>
+                                <p> We've seen that HTML determines what appears on-screen in a webpage. CSS is a <em>style sheet language</em>, which means it takes a HTML page and applys visual styles to it, allowing us to change the layout and presentation of our pages.</p>
+                                <p><b>Create</b> a new file and save it in the same folder as your html file with the name <span class="monospace">style.css</span>. We will write our first <em>rule</em> as follows:</p>
+
+<pre class="codeblock"><code><span class="codetag">body</span>{
+        <span class="coderule">margin</span>: <span class="codevalue">128px</span>;
+        <span class="coderule">text-align</span>: <span class="codevalue">center</span>;
+        <span class="coderule">font-family</span>: <span class="codevalue">sans-serif</span>;
+}</code></pre>
+
+                                <p>In order to make our CSS apply to our webpage, we need to tell the HTML code to load the stylesheet. We do that using a special 'head' element tag.<p>
+
+<pre class="codeblock"><code>        <span class="codetag">&lt;head&gt;</span>
+                ...
+                <span class="codetag">&lt;link rel=<span class="codestring">"stylesheet"</span> type=<span class="codestring">"text/css"</span> href=<span class="codestring">"style.css"</span>&gt;</span>
+        <span class="codetag">&lt;/head&gt;</span></code></pre>
+
+                                <p>This tag says that we're going to load a stylesheet, and that it's found in the file named 'style.css'.</p>
+                                <p>Now, when you save and reload the page, several things should have changed. What 3 things have happened?
+                                <p>In CSS, parts of the HTML code are chosen using <em>selectors</em>, and then <em>rules</em> are applied to anything that matches the selector. In our small piece of CSS, the selector is <span class="monospace">body</span>. This looks for all body tags (of which there is only one) and applys the rules to them.</p>
+                                <p>The text in our page is inside the <span class="monospace">body</span> tag, so if we added a rule to change it, all text we added to our site would be changed. Let's add more tags in our HTML, so we can style specific bits of text.</p>
+
+<pre class="codeblock"><code>        <span class="codetag">&lt;body&gt;</span>
+                <span class="codetag">&lt;h1&gt;</span>Hello, World!<span class="codetag">&lt;/h1&gt;</span>
+                <span class="codetag">&lt;span id=<span class="codestring">"tagline"</span>&gt;</span>This is my first webpage<span class="codetag">&lt;/span&gt;</span>
+        <span class="codetag">&lt;/body&gt;</span>
+</code></pre>
+                                <p><span class="monospace">&lt;h1&gt;</span> means 'Heading 1', and suggests that the text within is the page title. We can add the following CSS to change the size and colour of the text. (watch out for the american spelling 'color')</p>
+
+<pre class="codeblock"><code><span class="codetag">h1</span>{
+        <span class="coderule">font-size</span>: <span class="codevalue">72pt</span>;
+        <span class="coderule">color</span>: <span class="codevalue">#333333</span>;
+}</code></pre>
+
+                                <p>We added an 'id' to our <span class="monospace">&lt;span&gt;</span> tag which means we can style just that one tag instead of all span tags on the page. To style an id instead of a tag, start the selector with <span class="monospace">#</span>.
+
+<pre class="codeblock"><code><span class="codetag">#tagline</span>{
+        <span class="coderule">font-size</span>: <span class="codevalue">32pt</span>;
+        <span class="coderule">color</span>: <span class="codevalue">#999999</span>;
+}</code></pre>
+
+                                <figure class="autoimage">
+                                        <img src="img/helloworld.png" alt="The completed Hello, World! webpage" />
+                                        <p>The completed 'Hello, World!'' webpage</p>
+                                </figure>
+
                         </section>
                 </main>
         </body>

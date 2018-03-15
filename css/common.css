@@ -31,6 +31,10 @@ p {
         text-align: justify;
 }
 
+.monospace {
+        font-family: monospace;;
+}
+
 /* Workshop header */
 
 header #mcrraspjam, header #title {
@@ -65,35 +69,80 @@ header #title {
         padding-left: 4ch;
 }
 
-.contents > a, .contents > li {
+.contents>li {
         display: block;
         margin-top: 0.5rem;
+}
+
+.contents > li > a {
         font-weight: bold;
+        color: #e5286d;
 }
 
 .subcontents {
         margin: 0;
         padding-left: 4ch;
-        list-style-type:lower-roman;
+        list-style-type: none;
+}
+
+.subcontents > li > a {
+        color: black;
+}
+
+/* Images */
+
+.autoimage {
+        width: 40rem;
+        max-width: 90vw;
+        display: block;
+        margin: 1rem auto;
+}
+
+.autoimage>img {
+        width: 100%;
+        height: auto;
+
+        border: 1px solid #ddd;
+}
+
+.autoimage>p {
+        margin: 0 auto;
+        font-size: 0.8rem;
+        text-align: center;
+        font-style: italic;
 }
 
 /* Code Blocks */
 
 .codeblock {
         width: 40rem;
-        margin: 1rem auto;
+        margin: 2rem auto;
 
         padding: 1rem;
         border-radius: 1rem;
         border: 2px solid rgb(230, 192, 255);
         background-color: rgb(250, 242, 255);
+
+        font-size: 0.8rem;
 }
 
 .codetag {
-        color: red;
+        color: blue;
 }
 
 .codecomment {
         font-style: italic;
-        color: grey;
+        color: red;
+}
+
+.codestring {
+        color: darkgreen;
+}
+
+.coderule {
+        color: darkred;
+}
+
+.codevalue {
+        color: orange;
 }

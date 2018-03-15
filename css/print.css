@@ -47,7 +47,9 @@
         }
 
         #downloadlink {
+                display: block;
                 max-width: 40rem;
+                margin: 1rem auto;
 
                 font-size: 0.75rem;
                 padding: 0.25rem 0;
@@ -57,13 +59,21 @@
 
         /* Table of contents */
 
-        .contents > a, .contents > li {
+        .contents > li > a {
                 color: black;
+        }
+
+        /* Images */
+
+        .autoimage {
+                width: 24rem;
         }
 
         /* Code Blocks */
 
         .codeblock {
+                margin: 1rem auto;
+                padding: 0.25rem;
                 border: 1px solid rgb(205, 128, 255);
                 background-color: rgba(250, 242, 255, 0);
         }

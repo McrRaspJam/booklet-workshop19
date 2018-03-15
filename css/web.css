@@ -25,6 +25,10 @@
                 font-size: 14pt;
         }
 
+        p {
+                line-height: 1.5;
+        }
+
         p, nav, h2, h3, h4 {
                 max-width: 32rem;
                 margin-left: auto;
@@ -34,7 +38,6 @@
         section {
                 margin: 6rem 0;
         }
-
 
         /* Workshop header */
 
@@ -55,10 +58,6 @@
         }
 
         /* Table of contents */
-
-        .contents > a, .contents > li {
-                color: black;
-        }
 
         /* Code Blocks
 
