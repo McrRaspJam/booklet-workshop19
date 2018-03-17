@@ -120,6 +120,7 @@ header #title {
         display: block;
         width: 36rem;
         margin: 2rem auto;
+        overflow: visible;
 
         padding: 1rem;
         border-radius: 1rem;

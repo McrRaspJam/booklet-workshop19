@@ -5,9 +5,9 @@
                 <title>Workshop 19: HTML & CSS</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1">
                 <link rel="stylesheet" type="text/css" href="css/common.css" />
-                <link rel="stylesheet" type="text/css" href="css/print.css" />
-                <link rel="stylesheet" type="text/css" href="css/web.css" />
+                <link rel="stylesheet" type="text/css" href="css/screen.css" />
                 <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+                <link rel="stylesheet" type="text/css" href="css/print.css" />
                 <script>
                           function resizeIframe(obj) {
                                   obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
@@ -47,7 +47,7 @@
                                 <h4>How to use these booklets</h4>
                                 <p>The aim of these booklets is to help you attempt these workshops at home, and to explain concepts in more detail than at the workshop. You don't need to follow these booklets during the workshop, but you can if you'd like to.</p>
                                 <p>When you need to make changes to your code, they'll be presented in <em>listings</em> like the example below:</p>
-                                <iframe class="codeblock" src="code/listing_intro.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+                                <iframe class="codeblock" src="code/listing_intro.html"  onload="resizeIframe(this)"></iframe>
 
                                 <h4>What you'll need</h4>
                                 <p>Any computer with a web browser and a text editor, preferably one with syntax highlighting.</p>
@@ -70,16 +70,16 @@
                                 <section id="helloworld-html">
                                         <h3>Writing the content with HTML</h3>
                                         <p>HTML is a <em>markup language</em>, which means that it determines the content of a webpage. The following code creates a very simple webpage with a single text message:</p>
-                                        <iframe class="codeblock" src="code/listing_hw1.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+                                        <iframe class="codeblock" src="code/listing_hw1.html"  onload="resizeIframe(this)"></iframe>
                                         <p>You can try opening the .html file in a web browser now, and you should see 'Hello, World!' appear on screen in the tab that opens.</p>
                                         <p>Some additional information about the type of webpage should also be added. It's not too important to know what these changes do yet, but they'll be present in all of our HTML documents.</p>
-                                        <iframe class="codeblock" src="code/listing_hw2.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+                                        <iframe class="codeblock" src="code/listing_hw2.html"  onload="resizeIframe(this)"></iframe>
 
                                         <h4>What the code means</h4>
                                         <p>Let's go over the code we just wrote line-by-line, and see what everything does. Following the first line (which just tells any program reading the file what it is) we have our first tag, called html.</p>
-                                        <iframe class="codeblock" src="code/listing_hw3.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+                                        <iframe class="codeblock" src="code/listing_hw3.html"  onload="resizeIframe(this)"></iframe>
                                         <p>Tags almost always come in pairs. The first <span class="monospace">&lt;html&gt;</span> opens the tag, and the second, which has a /, closes the tag. We know that anything between these tags is part of the HTML code of our webpage.</p>
-                                        <iframe class="codeblock" src="code/listing_hw4.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+                                        <iframe class="codeblock" src="code/listing_hw4.html"  onload="resizeIframe(this)"></iframe>
                                         <p>Next, we have two sets of tags, <span class="monospace">&lt;head&gt;</span> and <span class="monospace">&lt;body&gt;</span>. The 'head' elements of the page are anything which <em>won't</em> be drawn on the screen, whereas the <em>body</em> element should all appear visually on the page.</p>
                                         <p>The text 'Hello, World!' has been placed inside the <span class="monospace">&lt;body&gt;</span> tag, so it appears on screen.
                                         <p>Given that <span class="monospace">&lt;title&gt;Hello, World!&lt;/title&gt;</span> therefore does not appear on the webpage itself, what do you think it does. Once you've made a guess, try changing it, then save and reload the page and see what changes.</p>
@@ -88,18 +88,18 @@
                                         <h3>Changing the look with CSS</h3>
                                         <p> We've seen that HTML determines what appears on-screen in a webpage. CSS is a <em>style sheet language</em>, which means it takes a HTML page and applys visual styles to it, allowing us to change the layout and presentation of our pages.</p>
                                         <p><b>Create</b> a new file and save it in the same folder as your html file with the name <span class="monospace">style.css</span>. We will write our first <em>rule</em> as follows:</p>
-                                        <iframe class="codeblock" src="code/listing_hw5.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+                                        <iframe class="codeblock" src="code/listing_hw5.html"  onload="resizeIframe(this)"></iframe>
                                         <p>In order to make our CSS apply to our webpage, we need to tell the HTML code to load the stylesheet. We do that by adding a special tag to the page head.</p>
-                                        <iframe class="codeblock" src="code/listing_hw6.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+                                        <iframe class="codeblock" src="code/listing_hw6.html"  onload="resizeIframe(this)"></iframe>
                                         <p>This tag says that we're going to load a stylesheet, and that it's found in the file named 'style.css'.</p>
                                         <p>Now, when you save and reload the page, several things should have changed. What 3 things have happened?
                                         <p>In CSS, parts of the HTML code are chosen using <em>selectors</em>, and then <em>rules</em> are applied to anything that matches the selector. In our small piece of CSS, the selector is <span class="monospace">body</span>. This looks for all body tags (of which there is only one) and applys the rules to them.</p>
                                         <p>The text in our page is inside the <span class="monospace">body</span> tag, so if we added a rule to change it, all text we added to our site would be changed. Let's add more tags in our HTML, so we can style specific bits of text.</p>
-                                        <iframe class="codeblock" src="code/listing_hw7.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+                                        <iframe class="codeblock" src="code/listing_hw7.html"  onload="resizeIframe(this)"></iframe>
                                         <p><span class="monospace">h1</span> means 'Heading 1', and suggests that the text within is the page title. We can add the following CSS to change the size and colour of the text. (watch out for the american spelling 'color')</p>
-                                        <iframe class="codeblock" src="code/listing_hw8.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+                                        <iframe class="codeblock" src="code/listing_hw8.html"  onload="resizeIframe(this)"></iframe>
                                         <p>We added an 'id' to our <span class="monospace">&lt;span&gt;</span> tag which we can use to style just one tag instead of all span tags on the page. To style an id instead of a tag, start the selector with <span class="monospace">#</span>.</p>
-                                        <iframe class="codeblock" src="code/listing_hw9.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+                                        <iframe class="codeblock" src="code/listing_hw9.html"  onload="resizeIframe(this)"></iframe>
                                         <figure class="autoimage">
                                                 <img src="img/helloworld.png" alt="The completed Hello, World! webpage" />
                                                 <p>The completed 'Hello, World!'' webpage</p>

@@ -3,12 +3,21 @@ html, body, pre{
 }
 
 html {
-        font-size: 10pt;
+        font-size: 11pt;
         font-family: monospace;
         line-height: 1;
 }
 
 @media only print{
+
+        html {
+                font-size: 9pt;
+        }
+
+        body {
+                padding: 1ch 0;
+        }
+
         .codetag {
                 color: #000099;
         }
@@ -33,6 +42,7 @@ html {
 }
 
 @media only screen{
+
         .codetag {
                 color: #0000ff;
         }
