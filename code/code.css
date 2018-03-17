@@ -1,0 +1,57 @@
+html, body, pre{
+        margin: 0;
+}
+
+html {
+        font-size: 10pt;
+        font-family: monospace;
+        line-height: 1;
+}
+
+@media only print{
+        .codetag {
+                color: #000099;
+        }
+
+        .codecomment {
+                font-style: italic;
+                color: #990000;
+        }
+
+        .codestring {
+                color: #004400;
+        }
+
+        .coderule {
+                color: #440000;
+        }
+
+        .codevalue {
+                color: #442200;
+        }
+
+}
+
+@media only screen{
+        .codetag {
+                color: #0000ff;
+        }
+
+        .codecomment {
+                font-style: italic;
+                color: #ff0000;
+        }
+
+        .codestring {
+                color: #009900;
+        }
+
+        .coderule {
+                color: #990000;
+        }
+
+        .codevalue {
+                color: #ff9900;
+        }
+
+}

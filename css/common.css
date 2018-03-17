@@ -32,7 +32,9 @@ p {
 }
 
 .monospace {
-        font-family: monospace;;
+        font-family: monospace;
+        font-weight: bold;
+        color: #777;
 }
 
 /* Workshop header */
@@ -115,6 +117,7 @@ header #title {
 /* Code Blocks */
 
 .codeblock {
+        display: block;
         width: 36rem;
         margin: 2rem auto;
 
@@ -124,25 +127,4 @@ header #title {
         background-color: rgb(250, 242, 255);
 
         font-size: 0.8rem;
-}
-
-.codetag {
-        color: blue;
-}
-
-.codecomment {
-        font-style: italic;
-        color: red;
-}
-
-.codestring {
-        color: darkgreen;
-}
-
-.coderule {
-        color: darkred;
-}
-
-.codevalue {
-        color: orange;
 }
