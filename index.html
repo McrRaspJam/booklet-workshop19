@@ -3,11 +3,20 @@
         <head>
                 <meta charset="UTF-8">
                 <title>Workshop 19: HTML & CSS</title>
+                <meta name="description" content="Manchester Raspberry Jam Workshop 19, covering HTML and CSS." />
                 <meta name="viewport" content="width=device-width, initial-scale=1">
+                <meta name="theme-color" content="#e5286d">
+                <meta name="apple-mobile-web-app-status-bar-style" content="#e5286d">
+                <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+                <link rel="manifest" href="manifest.json">
+                <link rel="icon" sizes`="48x48" href="css/icon_48.png">
+                <link rel="icon" sizes`="128x128" href="css/icon_128.png">
+                <link rel="icon" sizes`="192x192" href="css/icon_192.png">
                 <link rel="stylesheet" type="text/css" href="css/common.css" />
                 <link rel="stylesheet" type="text/css" href="css/screen.css" />
                 <link rel="stylesheet" type="text/css" href="css/mobile.css" />
                 <link rel="stylesheet" type="text/css" href="css/print.css" />
+                <link rel="stylesheet" type="text/css" href="css/demos.css" />
                 <script>
                           function resizeIframe(obj) {
                                   obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
@@ -25,9 +34,9 @@
                                 This booklet is available online at <a href="https://mcrraspjam.github.io/booklet-workshop19/" target="_blank">mcrraspjam.github.io/booklet-workshop19</a> (HTML) or <a href="http://bit.ly/mcrraspjam" target="_blank">bit.ly/mcrraspjam</a> (PDF)
                         </div>
                         <section id="contents">
-                                <h2>Contents</h2>
                                 <p>This workshop will teach you how to create basic web pages using HTML and CSS.</p>
                                 <p>Difficulty: Intermediate workshop</p>
+                                <h2>Contents</h2>
                                 <nav>
                                         <ol class="contents" start="0">
                                                 <li><a href="#introduction">Introduction</a></li>
@@ -35,6 +44,11 @@
                                                         <ol class="subcontents">
                                                                 <li><a href="#helloworld-html">Writing the content with HTML</a></li>
                                                                 <li><a href="#helloworld-css">Changing the look with CSS</a></li>
+                                                        </ol>
+                                                </li>
+                                                <li><a href="#devtools">Developer Tools</a>
+                                                        <ol class="subcontents">
+                                                                <li><a href="#devtools-demos">CSS Demos</a></li>
                                                         </ol>
                                                 </li>
                                         </ol>
@@ -104,6 +118,38 @@
                                                 <img src="img/helloworld.png" alt="The completed Hello, World! webpage" />
                                                 <p>The completed 'Hello, World!'' webpage</p>
                                         </figure>
+                                </section>
+                        </section>
+                        <section id="devtools">
+                                <h2>Developer Tools</h2>
+                                <p>Included in most web browsers are a set of tool menus for web developers. These tools are quite comprehensive, and include things like debuggers for Javascript scripting and performance monitors for complex 2D and 3D content. We're going to use the inspector tool to view individual elements and which bits of CSS are affecting them.</p>
+                                <p style="font-size:0.9rem; font-style:italic">The following instructions are for Chromium/Chrome, but can also be followed with Mozilla Firefox, and the process should be similar on other browsers.</p>
+                                <p>If you haven't already, open these notes in your browser, and press <span class="monospace">F12</span> to bring up the developer tools panel. The panel should open up in the <em>elements/inspector</em> tab, and a copy of the page's source code should be visible underneath.</p>
+                                <figure class="autoimage-noenlarge">
+                                        <img src="img/icon-selector.png" alt="Select element button" />
+                                        <p>The 'Select element' button</p>
+                                </figure>
+                                <p>Click the button in the top left of the panel. This allows you to select elements on the page using the mouse. You can hover over elements to see their CSS <em>Box Model</em>.</p>
+                                <p>In Chromium, the element is hightlighted in blue, and the margin space is highlighted in orange. Another part of the box model is <em>padding</em>. Try find an element in this page which has padding. How does padding differ to margin?</p>
+                                <section id="devtools-demos">
+                                        <h3>CSS Demos</h3>
+                                        <p>Below are some demos which show some ways nested tags might be used to build websites. Take a look at the different elements by selecting elements, then try disabling CSS rules using the <em>styles/rules</em> tab at the bottom of the developer panel, and see how each rule is used to build up the 'page'.</p>
+                                        <div id="demo1">
+                                                <div>
+                                                        <div>text</div>
+                                                        <div><img src="css/logo_300p.png" /></div>
+                                                        <div>More text, enough to wrap to a second line.</div>
+                                                </div>
+                                        </div>
+                                        <div id="demo2">
+                                                <nav>
+                                                        <a href="#">Home</a><a href="#">About</a>
+                                                </nav>
+                                                <div>
+                                                        <p>Lorem Ipsum</p>
+                                                        <p class="scrollbox">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur convallis sollicitudin lacus in aliquet. Vivamus ornare erat at urna pharetra, quis ullamcorper velit faucibus. Vivamus eu nunc facilisis, rutrum sapien ac, luctus orci. Cras volutpat rutrum finibus. Mauris ornare orci semper commodo dignissim. Aliquam ex tellus, scelerisque vel semper sit amet, tempor quis nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi dui magna, dapibus fringilla risus eget, posuere consequat ligula. Curabitur facilisis, nisl vel viverra eleifend, ipsum ipsum consequat arcu, non consequat enim est sed ex. Suspendisse in scelerisque felis.</p>
+                                                </div>
+                                        </div>
                                 </section>
                         </section>
                 </main>

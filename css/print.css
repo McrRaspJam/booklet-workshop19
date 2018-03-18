@@ -6,7 +6,7 @@
 
 @media only print {
 
-        #devtools, .hideinprint {
+        #devtools-demos, .hideinprint {
                 display: none;
         }
 

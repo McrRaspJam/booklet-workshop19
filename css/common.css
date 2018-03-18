@@ -93,7 +93,7 @@ header #title {
 
 /* Images */
 
-.autoimage {
+.autoimage, .autoimage-noenlarge {
         width: 36rem;
         max-width: 90vw;
         display: block;
@@ -107,7 +107,15 @@ header #title {
         border: 1px solid #ddd;
 }
 
-.autoimage>p {
+.autoimage-noenlarge>img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #ddd;
+}
+
+figure>p {
         margin: 0 auto;
         font-size: 0.8rem;
         text-align: center;
