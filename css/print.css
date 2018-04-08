@@ -39,11 +39,13 @@
         }
 
         header #logo {
+                display: none;
+                /*
                 width: 3cm;
                 height: 3cm;
-
                 display: block;
                 margin: 0 auto;
+                */
         }
 
         #downloadlink {
@@ -81,5 +83,7 @@
                 background-color: rgba(250, 242, 255, 0);
         }
 
-
+        #wip {
+                display: none;
+        }
 }
