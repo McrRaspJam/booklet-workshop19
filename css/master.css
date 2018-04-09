@@ -20,6 +20,8 @@
 }
 
 html {
+        min-width: 320px;
+
         font-family: 'Zilla Slab', serif;
         font-size: 16pt;
         font-weight: 400;
@@ -42,7 +44,7 @@ main > *:last-child {
         padding-bottom: 10vh;
 }
 
-p, h2, h3, h4, ol, ul, figure {
+body nav, p, h2, h3, h4, figure {
         max-width: 100%;
         width: 35rem;
         margin-left: auto;
@@ -103,7 +105,6 @@ header h1 {
 
 
 .contents {
-        width: calc(35rem - 2ch);
         padding-left: 2ch;
         color: #e5286d;
 }
@@ -111,7 +112,6 @@ header h1 {
 .subcontents {
         padding-left: 4ch;
         list-style: none;
-        width: auto;
         color: black;
 }
 

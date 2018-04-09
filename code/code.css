@@ -6,6 +6,7 @@ html {
         font-size: 11pt;
         font-family: monospace;
         line-height: 1;
+        overflow: hidden;
 }
 
 @media only print{
