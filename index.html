@@ -8,14 +8,15 @@
                 <meta name="theme-color" content="#e5286d">
                 <meta name="apple-mobile-web-app-status-bar-style" content="#e5286d">
                 <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-                <link rel="manifest" href="manifest.json">
                 <link rel="icon" sizes`="48x48" href="css/icon_48.png">
                 <link rel="icon" sizes`="128x128" href="css/icon_128.png">
                 <link rel="icon" sizes`="192x192" href="css/icon_192.png">
-                <link rel="stylesheet" type="text/css" href="css/common.css" />
-                <link rel="stylesheet" type="text/css" href="css/screen.css" />
+                <link rel="manifest" href="manifest.json">
+                <link rel="stylesheet" type="text/css" href="css/master.css" />
+                <!--
                 <link rel="stylesheet" type="text/css" href="css/mobile.css" />
                 <link rel="stylesheet" type="text/css" href="css/print.css" />
+                -->
                 <link rel="stylesheet" type="text/css" href="css/demos.css" />
                 <script>
                           function resizeIframe(obj) {
@@ -28,7 +29,7 @@
                         Work in Progress
                 </div>
                 <header>
-                        <img id="logo" src="css/logo_300p.png" alt="Manchester Raspberry Jam Logo"/>
+                        <!--<img id="logo" src="css/logo_300p.png" alt="Manchester Raspberry Jam Logo"/>-->
                         <a id="mcrraspjam" href="http://www.mcrraspjam.org.uk" target="_blank">Manchester Raspberry Jam</a>
                         <h1 id="title">Workshop 19: HTML & CSS</h1>
                 </header>
@@ -59,7 +60,7 @@
                                 </nav>
                         </section>
                         <section id="introduction">
-                                <h2>Introduction</h2>
+                                <h2>0&emsp;Introduction</h2>
                                 <p>[TODO]</p>
 
                                 <h4>How to use these booklets</h4>
@@ -72,11 +73,11 @@
 
                                 <h4>Everything else</h4>
                                 <p class="hideinprint">The GitHub repo for these notes can be found at <a href="https://github.com/McrRaspJam/booklet-workshop19" target="_blank">github.com/McrRaspJam/booklet-workshop19</a></p>
-                                <p>To allow modification and redistribution of these booklets, they are distributed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a> License.</p>
+                                <p>To allow modification and redistribution of our workshop notes, they are distributed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a> License.</p>
                                 <p>If you get stuck, find errors or have feedback about these booklets, please email me at: <a href="mailto:jam@jackjkelly.com">jam@jackjkelly.com</a></p>
                         </section>
                         <section id="helloworld">
-                                <h2>Hello, World!</h2>
+                                <h2>1&emsp;Hello, World!</h2>
                                 <p>Boot your computer to the desktop. If you're using a Raspberry Pi that does not log in automatically, the default login is:</p>
                                 <p><b>username:</b> pi<br /> <b>password:</b> raspberry</p>
                                 <p>Once at the desktop, open the text editor of your choice. We will be using <em>Geany</em>, which can be found in the application menu of Raspbian under <span class="monospace">Programming → Geany IDE</span></p>
@@ -100,7 +101,7 @@
                                         <iframe class="codeblock" src="code/listing_hw4.html"  onload="resizeIframe(this)"></iframe>
                                         <p>Next, we have two sets of tags, <span class="monospace">&lt;head&gt;</span> and <span class="monospace">&lt;body&gt;</span>. The 'head' elements of the page are anything which <em>won't</em> be drawn on the screen, whereas the <em>body</em> element should all appear visually on the page.</p>
                                         <p>The text 'Hello, World!' has been placed inside the <span class="monospace">&lt;body&gt;</span> tag, so it appears on screen.
-                                        <p>Given that <span class="monospace">&lt;title&gt;Hello, World!&lt;/title&gt;</span> therefore does not appear on the webpage itself, what do you think it does. Once you've made a guess, try changing it, then save and reload the page and see what changes.</p>
+                                        <p>Given that <span class="monospace">&lt;title&gt;Hello, World!&lt;/title&gt;</span> therefore does not appear on the webpage itself, what do you think it does? Once you've made a guess, try changing it, then save and reload the page and see what changes.</p>
                                 </section>
                                 <section id="helloworld-css">
                                         <h3>Changing the look with CSS</h3>
@@ -125,7 +126,7 @@
                                 </section>
                         </section>
                         <section id="devtools">
-                                <h2>Developer Tools</h2>
+                                <h2>2&emsp;Developer Tools</h2>
                                 <p>Included in most web browsers are a set of tool menus for web developers. These tools are quite comprehensive, and include things like debuggers for Javascript scripting and performance monitors for complex 2D and 3D content. We're going to use the inspector tool to view individual elements and which bits of CSS are affecting them.</p>
                                 <p style="font-size:0.9rem; font-style:italic">The following instructions are for Chromium/Chrome, but can also be followed with Mozilla Firefox, and the process should be similar on other browsers.</p>
                                 <p>If you haven't already, open these notes in your browser, and press <span class="monospace">F12</span> to bring up the developer tools panel. The panel should open up in the <em>elements/inspector</em> tab, and a copy of the page's source code should be visible underneath.</p>

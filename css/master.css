@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Zilla+Slab:400,400i,600');
+
+/* TODO: delete work in progress banner */
+
+#wip {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        margin: 0;
+        height: 32px;
+
+        font-size: 24px;
+        line-height: 32px;
+        background: linear-gradient(to bottom, #FFDE67, #BFA74D);
+        box-shadow: 0 1px 8px rgba(0,0,0,0.25);
+        color: #ffffff;
+        text-shadow: 1px 1px 0 rgba(0,0,0,0.25);
+        text-align: center;
+}
+
+html {
+        font-family: 'Zilla Slab', serif;
+        font-size: 16pt;
+        font-weight: 400;
+
+        background-color: #eee;
+}
+
+body {
+        margin: 0 auto;
+        max-width: 100vw;
+        width: calc(35rem + 20vw);
+
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+main > *:last-child {
+        margin-bottom: 0;
+        padding-bottom: 10vh;
+}
+
+p, h2, h3, h4, ol, ul, figure {
+        max-width: 100%;
+        width: 35rem;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+h2 {
+        font-size: 1.5rem;
+        color:#e5286d;
+}
+h3 { font-size: 1.25rem; }
+h4 { font-size: 1.1rem; }
+
+p {
+        line-height: 1.5;
+        text-align: justify;
+}
+
+a {
+        text-decoration: none;
+}
+
+.monospace {
+        font-weight: bold;
+        color: #777;
+}
+
+/* Header */
+
+header {
+        padding-top: 10vh;
+        margin-bottom: 2rem;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        text-align: center;
+}
+
+header #mcrraspjam {
+        font-size: 3rem;
+        color: #e5286d;
+        text-decoration: none;
+}
+
+header h1 {
+        margin: 0;
+        font-size: 1.5rem;
+        color: #777;
+}
+
+@media only screen {
+        #downloadlink {
+                display: none;
+        }
+}
+
+
+/* Table of Contents */
+
+
+.contents {
+        width: calc(35rem - 2ch);
+        padding-left: 2ch;
+        color: #e5286d;
+}
+
+.subcontents {
+        padding-left: 4ch;
+        list-style: none;
+        width: auto;
+        color: black;
+}
+
+.contents a {
+        text-decoration: none;
+        color: #e5286d;
+}
+
+.subcontents a {
+        color: black;
+}
+
+
+/* Content */
+
+section {
+        margin: 6rem 0;
+}
+
+figure p {
+        margin: 0;
+        text-align: center;
+        font-size: 0.9rem;
+        font-style: italic;
+}
+
+.autoimage-noenlarge img {
+        display: block;
+        margin: 0 auto;
+}
+
+.autoimage img {
+        max-width: 100%;
+}
+
+/* Code Blocks */
+
+.codeblock {
+        display: block;
+        max-width: calc(100vw - 2rem);
+        width: calc(35rem - 2rem);
+        margin: 2rem auto;
+        overflow: visible;
+
+        padding: 1rem;
+        border-radius: 1rem;
+        border: 2px solid rgb(230, 192, 255);
+        background-color: rgb(250, 242, 255);
+
+        font-size: 0.8rem;
+}
