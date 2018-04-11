@@ -16,7 +16,6 @@
                 <link rel="stylesheet" type="text/css" href="css/mobile.css" />
                 <!--
                 <link rel="stylesheet" type="text/css" href="css/print.css" />
-                <link rel="stylesheet" type="text/css" href="css/demos.css" />
                 -->
 
                 <script>
@@ -51,15 +50,9 @@
                                                                 <li><a href="#helloworld-css">Changing the look with CSS</a></li>
                                                         </ol>
                                                 </li>
-                                                <!--
-                                                <li><a href="#devtools">Developer Tools</a>
-                                                        <ol class="subcontents">
-                                                                <li><a href="#devtools-demos">CSS Demos</a></li>
-                                                        </ol>
-                                                </li>
-                                                -->
+                                                <li><a href="#devtools">Developer Tools</a></li>
                                                 <li><a href="#wikipedia">Styling a Webpage</a></li>
-                                                <li><a href="#homepage">Homepage</a></li>
+                                                <li><a href="#homepage">Creating a Personal Homepage</a></li>
                                         </ol>
                                 </nav>
                         </section>
@@ -89,7 +82,7 @@
                                         <img src="img/geany.png" alt="The Geany IDE window" />
                                         <p>The Geany IDE window (shown on Windows)</p>
                                 </figure>
-                                <p>The Geany IDE window will open, with a new file already opened. <b>Click</b> <span class="monospace">File → Save As...</span> and save the empty file inside the workshop 19 folder <span class="monospace">~/McrRaspJam/Workshop 19/helloworld/</span> with the name <span class="monospace">helloworld.html</span></p>
+                                <p>The Geany IDE window will open, with a new file already opened. <b>Click</b> <span class="monospace">File → Save As...</span> and save the empty file inside the workshop 19 folder <span class="monospace">~/McrRaspJam<wbr>/Workshop&nbsp;19<wbr>/0_helloworld/</span> with the name <span class="monospace">helloworld.html</span></p>
                                 <section id="helloworld-html">
                                         <h3>Writing the content with HTML</h3>
                                         <p>HTML is a <em>markup language</em>, which means that it determines the content of a webpage. The following code creates a very simple webpage with a single text message:</p>
@@ -103,7 +96,7 @@
                                         <iframe class="codeblock" src="code/listing_hw3.html"  onload="resizeIframe(this)"></iframe>
                                         <p>Tags almost always come in pairs. The first <span class="monospace">&lt;html&gt;</span> opens the tag, and the second, which has a /, closes the tag. We know that anything between these tags is part of the HTML code of our webpage.</p>
                                         <iframe class="codeblock" src="code/listing_hw4.html"  onload="resizeIframe(this)"></iframe>
-                                        <p>Next, we have two sets of tags, <span class="monospace">&lt;head&gt;</span> and <span class="monospace">&lt;body&gt;</span>. The 'head' elements of the page are anything which <em>won't</em> be drawn on the screen, whereas the <em>body</em> element should all appear visually on the page.</p>
+                                        <p>Next, we have two sets of tags, <span class="monospace">&lt;head&gt;</span> and <span class="monospace">&lt;body&gt;</span>. The 'head' elements are anything that <em>won't</em> be drawn on the page, whereas the <em>body</em> element should all appear visually on the page.</p>
                                         <p>The text 'Hello, World!' has been placed inside the <span class="monospace">&lt;body&gt;</span> tag, so it appears on screen.
                                         <p>Given that <span class="monospace">&lt;title&gt;Hello, World!&lt;/title&gt;</span> therefore does not appear on the webpage itself, what do you think it does? Once you've made a guess, try changing it, then save and reload the page and see what changes.</p>
                                 </section>
@@ -129,7 +122,6 @@
                                         </figure>
                                 </section>
                         </section>
-                        <!--
                         <section id="devtools">
                                 <h2>2&emsp;Developer Tools</h2>
                                 <p>Included in most web browsers are a set of tool menus for web developers. These tools are quite comprehensive, and include things like debuggers for Javascript scripting and performance monitors for complex 2D and 3D content. We're going to use the inspector tool to view individual elements and which bits of CSS are affecting them.</p>
@@ -141,37 +133,18 @@
                                 </figure>
                                 <p>Click the button in the top left of the panel. This allows you to select elements on the page using the mouse. You can hover over elements to see their CSS <em>Box Model</em>.</p>
                                 <p>In Chromium, the element is hightlighted in blue, and the margin space is highlighted in orange. Another part of the box model is <em>padding</em>. Try find an element in this page which has padding. How does padding differ to margin?</p>
-                                <section id="devtools-demos">
-                                        <h3>CSS Demos</h3>
-                                        <p>Below are some demos which show some ways nested tags might be used to build websites. Take a look at the different elements by selecting elements, then try disabling CSS rules using the <em>styles/rules</em> tab at the bottom of the developer panel, and see how each rule is used to build up the 'page'.</p>
-                                        <div id="demo1">
-                                                <div>
-                                                        <div>text</div>
-                                                        <div><img src="css/logo_300p.png" /></div>
-                                                        <div>More text, enough to wrap to a second line.</div>
-                                                </div>
-                                        </div>
-                                        <div id="demo2">
-                                                <nav>
-                                                        <a href="#">Home</a><a href="#">About</a>
-                                                </nav>
-                                                <div>
-                                                        <p>Lorem Ipsum</p>
-                                                        <p class="scrollbox">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur convallis sollicitudin lacus in aliquet. Vivamus ornare erat at urna pharetra, quis ullamcorper velit faucibus. Vivamus eu nunc facilisis, rutrum sapien ac, luctus orci. Cras volutpat rutrum finibus. Mauris ornare orci semper commodo dignissim. Aliquam ex tellus, scelerisque vel semper sit amet, tempor quis nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi dui magna, dapibus fringilla risus eget, posuere consequat ligula. Curabitur facilisis, nisl vel viverra eleifend, ipsum ipsum consequat arcu, non consequat enim est sed ex. Suspendisse in scelerisque felis.</p>
-                                                </div>
-                                        </div>
-                                </section>
                         </section>
-                -->
                         <section id="wikipedia">
-                                <h2>2&emsp;Styling a Webpage</h2>
+                                <h2>3&emsp;Styling a Webpage</h2>
+                                <p>Let's try creating a stylesheet for a more complete web page. Go to  <span class="monospace">~/McrRaspJam<wbr>/Workshop&nbsp;19<wbr>/1_wikipedia/</span> and then open the file <span class="monospace">raspberrypi.html</span> in your text editor.</p>
+                                <p>This file is a truncated copy of the <a href="https://en.wikipedia.org/wiki/Raspberry_Pi" target="_blank">Wikipedia entry</a> for the Raspberry Pi. The page has the same information as the Wikipedia page it came from, but it currently has no stylesheet applied to it. We're going to design our own stylesheet for the page.</p>
                                 <figure class="autoimage">
                                         <img src="img/wiki-before.png" alt="Copy of Wikipedia Raspberry Pi entry" />
                                         <p>The copy of Wikipedia's Raspberry Pi entry</p>
                                 </figure>
                         </section>
                         <section id="homepage">
-                                <h2>Homepage</h2>
+                                <h2>4&emsp;Creating a Personal Homepage</h2>
                                 <p>homepage</p>
                         </section>
                 </main>

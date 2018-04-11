@@ -68,8 +68,13 @@ a {
 }
 
 .monospace {
-        font-weight: bold;
-        color: #777;
+        border-radius: 0.5ch;
+        padding: 0 0.5ch;
+        border: 1px solid #ddd;
+        background-color: #eee;
+
+        font-family: monospace;
+        /*font-weight: bold;*/
 }
 
 /* Header */
