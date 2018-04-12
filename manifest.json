@@ -1,10 +1,12 @@
 {
+        "lang": "en-GB",
         "name": "Workshop 19: HTML & CSS",
         "short_name": "Workshop 19",
         "description": "Notes for Manchester Raspberry Jam Workshop 19",
         "start_url": "index.html",
         "display": "standalone",
         "orientation": "portrait",
+        "theme_color": "#e5286d",
         "icons": [
                 {
                         "src": "css/icon_48.png",

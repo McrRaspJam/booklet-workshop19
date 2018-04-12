@@ -8,10 +8,10 @@
                 <meta name="theme-color" content="#e5286d">
                 <meta name="apple-mobile-web-app-status-bar-style" content="#e5286d">
                 <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+                <link rel="manifest" href="manifest.json">
                 <link rel="icon" sizes`="48x48" href="css/icon_48.png">
                 <link rel="icon" sizes`="128x128" href="css/icon_128.png">
                 <link rel="icon" sizes`="192x192" href="css/icon_192.png">
-                <link rel="manifest" href="manifest.json">
                 <link rel="stylesheet" type="text/css" href="css/master.css" />
                 <link rel="stylesheet" type="text/css" href="css/mobile.css" />
                 <!--
@@ -51,7 +51,13 @@
                                                         </ol>
                                                 </li>
                                                 <li><a href="#devtools">Developer Tools</a></li>
-                                                <li><a href="#wikipedia">Styling a Webpage</a></li>
+                                                <li><a href="#wikipedia">Styling a Webpage</a>
+                                                        <ol class="subcontents">
+                                                                <li><a href="#wikipedia-page">Page Layout</a></li>
+                                                                <li><a href="#wikipedia-infobox">Infobox Table</a></li>
+                                                                <li><a href="#wikipedia-image">Floating Images</a></li>
+                                                        </ol>
+                                                </li>
                                                 <li><a href="#homepage">Creating a Personal Homepage</a></li>
                                         </ol>
                                 </nav>
@@ -128,7 +134,7 @@
                                 <p style="font-size:0.9rem; font-style:italic">The following instructions are for Chromium/Chrome, but can also be followed with Mozilla Firefox, and the process should be similar on other browsers.</p>
                                 <p>If you haven't already, open these notes in your browser, and press <span class="monospace">F12</span> to bring up the developer tools panel. The panel should open up in the <em>elements/inspector</em> tab, and a copy of the page's source code should be visible underneath.</p>
                                 <figure class="autoimage-noenlarge">
-                                        <img src="img/icon-selector.png" alt="Select element button" />
+                                        <img src="img/icon-selector.png" alt="" />
                                         <p>The 'Select element' button</p>
                                 </figure>
                                 <p>Click the button in the top left of the panel. This allows you to select elements on the page using the mouse. You can hover over elements to see their CSS <em>Box Model</em>.</p>
@@ -139,13 +145,52 @@
                                 <p>Let's try creating a stylesheet for a more complete web page. Go to  <span class="monospace">~/McrRaspJam<wbr>/Workshop&nbsp;19<wbr>/1_wikipedia/</span> and then open the file <span class="monospace">raspberrypi.html</span> in your text editor.</p>
                                 <p>This file is a truncated copy of the <a href="https://en.wikipedia.org/wiki/Raspberry_Pi" target="_blank">Wikipedia entry</a> for the Raspberry Pi. The page has the same information as the Wikipedia page it came from, but it currently has no stylesheet applied to it. We're going to design our own stylesheet for the page.</p>
                                 <figure class="autoimage">
-                                        <img src="img/wiki-before.png" alt="Copy of Wikipedia Raspberry Pi entry" />
+                                        <img src="img/wiki-before.png" alt="" />
                                         <p>The copy of Wikipedia's Raspberry Pi entry</p>
+                                </figure>
+                                <p>Start by taking a look at the head of the HTML file. You can see that a stylesheet should be being loaded with the line <span class="monospace">&lt;link rel="stylesheet" href="style.css"&gt;</span> but there isn't a style.css file in the folder yet. Create a new file called <span class="monospace">style.css</span> and open it in your text editor.</p>
+                                <p>From here on, the notes will provide an example of how a stylesheet could be, but feel free to change sizes, spacing and colours how you prefer.</p>
+                                <h3 id="wikipedia-page">Page Layout</h3>
+                                <p>A typical layout for articles on the web is to display the text in a single column, placed in the centre of the screen.</p>
+                                <p class="noprint">the first HTML tag that we can select in our stylesheet is the <span class="monospace">&lt;html&gt;</span> tag itself. We will make this the background of our page, setting the background colour to a light grey. We can also set our font and text size here, as all tags are within the <span class="monospace">&lt;html&gt;</span> tag and will <em>inherit</em> that font.</p>
+                                <iframe class="codeblock" src="code/listing_wi1.html"  onload="resizeIframe(this)"></iframe>
+                                <p>Immediately inside the <span class="monospace">&lt;html&gt;</span> tag in our webpage is the <span class="monospace">&lt;body&gt;</span> tag, which we will style as the page itself.</p>
+                                <p class="noprint">We will set the background colour to white so it looks different to the background. We'll limit the width; we could set a pixel value like <span class="monospace">800px</span> but we'll use <span class="monospace">em</span> which is a unit that is relative to the font size. We'll also set the margin to <span class="monospace">0 auto</span>, which means the horizontal margins are automatic, centring the tag on the page. Finally, we'll set the padding so the text isn't pressed against the edge of the body tag.</p>
+                                <iframe class="codeblock" src="code/listing_wi2.html"  onload="resizeIframe(this)"></iframe>
+                                <figure class="autoimage">
+                                        <img src="img/wiki-body.png" alt="" />
+                                        <p>The page after adding html/body rules</p>
+                                </figure>
+                                <h3 id="wikipedia-infobox">Infobox Table</h3>
+                                <p>The infobox is a feature on many Wikipedia pages, it is a simple table that outlines many pieces of information about the subject. We won't go into the details of HTML tables today, but let's decorate a few parts of it.</p>
+                                <p>We'll start by putting a border around the table, so it is clear where it begins and ends on the page. A CSS border has three properties; the thickness of the line, the style (solid, dashed, double, etc) and the colour. We'll also give it a background colour and center it in the page.</p>
+                                <iframe class="codeblock" src="code/listing_wi3.html"  onload="resizeIframe(this)"></iframe>
+                                <p>Next, we'll centre the images inside the table. We'll use the selector <span class="monospace">#infobox&nbsp;img</span>, which selects any <span class="monospace">&lt;img&gt;</span> tags inside the tag with <span class="monospace">id="infobox"</span>. We can use the same margin trick to centre images, but we need to change the <span class="monospace">display</span> rule.</p>
+                                <iframe class="codeblock" src="code/listing_wi4.html"  onload="resizeIframe(this)"></iframe>
+                                <p>The list of operating systems uses a <span class="monospace">&lt;ul&gt;</span> (unordered list) tag, which by default is shown as bullet points. Bullet points aren't needed in this case, so we can disable those with CSS as well. We'll also remove the padding that is used to make space for the bullet points.</p>
+                                <iframe class="codeblock" src="code/listing_wi5.html"  onload="resizeIframe(this)"></iframe>
+                                <p class="noprint"><b>Extra:</b> Each of the operating systems in the list has a 'class', categorising it into a family of operating systems. Try colouring each item <span class="monospace">&lt;li&gt;</span> in the list based on these classes. Here are some colour codes you could use:</p>
+                                <ul class="noprint swatches">
+                                        <li>#dfbfff <span class="swatch" style="background-color: #dfbfff"></span></li>
+                                        <li>#bfcaff <span class="swatch" style="background-color: #bfcaff"></span></li>
+                                        <li>#bfffbf <span class="swatch" style="background-color: #bfffbf"></span></li>
+                                        <li>#ffbfbf <span class="swatch" style="background-color: #ffbfbf"></span></li>
+                                        <li>purple <span class="swatch" style="background-color: purple"></span></li>
+                                        <li>blue <span class="swatch" style="background-color: blue"></span></li>
+                                        <li>green <span class="swatch" style="background-color: green"></span></li>
+                                        <li>red <span class="swatch" style="background-color: red"></span></li>
+                                </ul>
+                                <p class="noprint">To select a class, start the selector with a <span class="monospace">.</span>, e.g. <span class="monospace">.os-other {</span></p>
+                                <h3 id="wikipedia-image">Floating Images</h3>
+                                <p>On Wikipedia, images sit to the right of the text on the page. This is very easy to do with CSS with the <span class="monospace">float</span> rule. We'll also add a border.</p>
+                                <iframe class="codeblock" src="code/listing_wi6.html"  onload="resizeIframe(this)"></iframe>
+                                <figure class="autoimage">
+                                        <img src="img/wiki-after.png" alt="" />
+                                        <p>Wikipedia page with a completed stylesheet</p>
                                 </figure>
                         </section>
                         <section id="homepage">
                                 <h2>4&emsp;Creating a Personal Homepage</h2>
-                                <p>homepage</p>
                         </section>
                 </main>
         </body>
