@@ -9,9 +9,9 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="#e5286d">
         <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
         <link rel="manifest" href="manifest.json">
-        <link rel="icon" sizes`="48x48" href="css/icon_48.png">
-        <link rel="icon" sizes`="128x128" href="css/icon_128.png">
-        <link rel="icon" sizes`="192x192" href="css/icon_192.png">
+        <link rel="icon" sizes="48x48" href="css/icon_48.png">
+        <link rel="icon" sizes="128x128" href="css/icon_128.png">
+        <link rel="icon" sizes="192x192" href="css/icon_192.png">
         <link rel="stylesheet" type="text/css" href="css/master.css" />
         <link rel="stylesheet" type="text/css" href="css/mobile.css" />
         <link rel="stylesheet" type="text/css" href="css/print.css" />
@@ -54,6 +54,9 @@
                                                 </ol>
                                         </li>
                                         <li><a href="#homepage">Creating a Personal Homepage</a></li>
+                                        <ol class="subcontents noprint">
+                                                <li><a href="#homepage-page">Page Layout and Header</a></li>
+                                        </ol>
                                 </ol>
                         </nav>
                 </section>
@@ -200,7 +203,14 @@
                                 <img src="img/babbage.jpg" alt="" style="max-height:480px" />
                                 <p>Babbage the Bear in full Raspberry Pi regalia.</p>
                         </figure>
-                        <h3></h3>
+                        <section id="homepage-page">
+                                <h3>Page Layout and Header</h3>
+                                <p>First, we'll create a new blank HTML page, and add a simple header.</p>
+                                <iframe class="codeblock" src="code/listing_hp1.html"  onload="resizeIframe(this)"></iframe>
+                                <p>Now we'll create the stylesheet <span class="monospace">style.css</span>. We need to conside what shape we want our page to be. The thin column we used for the Wikipedia page is great for long pieces of text, but our homepage will only have a small amount of text. Let's try centering our page in the middle of the screen</p>
+                                <iframe class="codeblock" src="code/listing_hp2.html"  onload="resizeIframe(this)"></iframe>
+                                <p>We've used the same <span class="monospace">margin: 0 auto;</span> trick to center the page horizontally. To move the page down from the top, we've used a top margin of <span class="monospace">25vh</span>, which means 25% of the viewport (screen) height.</p>
+                        </section>
                 </section>
         </main>
 </body>
