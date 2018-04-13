@@ -92,8 +92,8 @@
                                         <p>HTML is a <em>markup language</em>, which means that it determines the content of a webpage. The following code creates a very simple webpage with a single text message:</p>
                                         <iframe class="codeblock" src="code/listing_hw1.html"  onload="resizeIframe(this)"></iframe>
                                         <p>You can try opening the .html file in a web browser now, and you should see 'Hello, World!' appear on screen in the tab that opens.</p>
-                                        <p>Some additional information about the type of webpage should also be added. It's not too important to know what these changes do yet, but they'll be present in all of our HTML documents.</p>
-                                        <iframe class="codeblock" src="code/listing_hw2.html"  onload="resizeIframe(this)"></iframe>
+                                        <p class="noprint">Some additional information about the type of webpage should also be added. It's not too important to know what these changes do yet, but they'll be present in all of our HTML documents.</p>
+                                        <iframe class="codeblock noprint" src="code/listing_hw2.html"  onload="resizeIframe(this)"></iframe>
 
                                         <h4>What the code means</h4>
                                         <p>Let's go over the code we just wrote line-by-line, and see what everything does. Following the first line (which just tells any program reading the file what it is) we have our first tag, called html.</p>
@@ -102,7 +102,7 @@
                                         <iframe class="codeblock" src="code/listing_hw4.html"  onload="resizeIframe(this)"></iframe>
                                         <p>Next, we have two sets of tags, <span class="monospace">&lt;head&gt;</span> and <span class="monospace">&lt;body&gt;</span>. The 'head' elements are anything that <em>won't</em> be drawn on the page, whereas the <em>body</em> element should all appear visually on the page.</p>
                                         <p>The text 'Hello, World!' has been placed inside the <span class="monospace">&lt;body&gt;</span> tag, so it appears on screen.
-                                        <p>Given that <span class="monospace">&lt;title&gt;Hello, World!&lt;/title&gt;</span> therefore does not appear on the webpage itself, what do you think it does? Once you've made a guess, try changing it, then save and reload the page and see what changes.</p>
+                                        <p class="noprint">Given that <span class="monospace">&lt;title&gt;Hello, World!&lt;/title&gt;</span> therefore does not appear on the webpage itself, what do you think it does? Once you've made a guess, try changing it, then save and reload the page and see what changes.</p>
                                 </section>
                                 <section id="helloworld-css">
                                         <h3>Changing the look with CSS</h3>
@@ -111,7 +111,7 @@
                                         <iframe class="codeblock" src="code/listing_hw5.html"  onload="resizeIframe(this)"></iframe>
                                         <p>In order to make our CSS apply to our webpage, we need to tell the HTML code to load the stylesheet. We do that by adding a special tag to the page head.</p>
                                         <iframe class="codeblock" src="code/listing_hw6.html"  onload="resizeIframe(this)"></iframe>
-                                        <p>This tag says that we're going to load a stylesheet, and that it's found in the file named 'style.css'.</p>
+                                        <p class="noprint">This tag says that we're going to load a stylesheet, and that it's found in the file named 'style.css'.</p>
                                         <p>Now, when you save and reload the page, several things should have changed. What 3 things have happened?
                                         <p>In CSS, parts of the HTML code are chosen using <em>selectors</em>, and then <em>rules</em> are applied to anything that matches the selector. In our small piece of CSS, the selector is <span class="monospace">body</span>. This looks for all body tags (of which there is only one) and applys the rules to them.</p>
                                         <p>The text in our page is inside the <span class="monospace">body</span> tag, so if we added a rule to change it, all text we added to our site would be changed. Let's add more tags in our HTML, so we can style specific bits of text.</p>
@@ -128,15 +128,16 @@
                         </section>
                         <section id="devtools">
                                 <h2>2&emsp;Developer Tools</h2>
-                                <p>Included in most web browsers are a set of tool menus for web developers. These tools are quite comprehensive, and include things like debuggers for Javascript scripting and performance monitors for complex 2D and 3D content. We're going to use the inspector tool to view individual elements and which bits of CSS are affecting them.</p>
-                                <p style="font-size:0.9rem; font-style:italic">The following instructions are for Chromium/Chrome, but can also be followed with Mozilla Firefox, and the process should be similar on other browsers.</p>
-                                <p>If you haven't already, open these notes in your browser, and press <span class="monospace">F12</span> to bring up the developer tools panel. The panel should open up in the <em>elements/inspector</em> tab, and a copy of the page's source code should be visible underneath.</p>
-                                <figure class="autoimage-noenlarge">
+                                <p class="noscreen"><em>Read more about developer tools on the online notes</em></p>
+                                <p class="noprint">Included in most web browsers are a set of tool menus for web developers. These tools are quite comprehensive, and include things like debuggers for Javascript scripting and performance monitors for complex 2D and 3D content. We're going to use the inspector tool to view individual elements and which bits of CSS are affecting them.</p>
+                                <p class="noprint" style="font-size:0.9rem; font-style:italic">The following instructions are for Chromium/Chrome, but can also be followed with Mozilla Firefox, and the process should be similar on other browsers.</p>
+                                <p class="noprint">If you haven't already, open these notes in your browser, and press <span class="monospace">F12</span> to bring up the developer tools panel. The panel should open up in the <em>elements/inspector</em> tab, and a copy of the page's source code should be visible underneath.</p>
+                                <figure class="autoimage-noenlarge noprint">
                                         <img src="img/icon-selector.png" alt="" />
                                         <p>The 'Select element' button</p>
                                 </figure>
-                                <p>Click the button in the top left of the panel. This allows you to select elements on the page using the mouse. You can hover over elements to see their CSS <em>Box Model</em>.</p>
-                                <p>In Chromium, the element is hightlighted in blue, and the margin space is highlighted in orange. Another part of the box model is <em>padding</em>. Try find an element in this page which has padding. How does padding differ to margin?</p>
+                                <p class="noprint">Click the button in the top left of the panel. This allows you to select elements on the page using the mouse. You can hover over elements to see their CSS <em>Box Model</em>.</p>
+                                <p class="noprint">In Chromium, the element is hightlighted in blue, and the margin space is highlighted in orange. Another part of the box model is <em>padding</em>. Try find an element in this page which has padding. How does padding differ to margin?</p>
                         </section>
                         <section id="wikipedia">
                                 <h2>3&emsp;Styling a Webpage</h2>
@@ -147,7 +148,7 @@
                                         <p>The copy of Wikipedia's Raspberry Pi entry</p>
                                 </figure>
                                 <p>Start by taking a look at the head of the HTML file. You can see that a stylesheet should be being loaded with the line <span class="monospace">&lt;link rel="stylesheet" href="style.css"&gt;</span> but there isn't a style.css file in the folder yet. Create a new file called <span class="monospace">style.css</span> and open it in your text editor.</p>
-                                <p>From here on, the notes will provide an example of how a stylesheet could be, but feel free to change sizes, spacing and colours how you prefer.</p>
+                                <p class="noprint">From here on, the notes will provide an example of how a stylesheet could be, but feel free to change sizes, spacing and colours how you prefer.</p>
                                 <h3 id="wikipedia-page">Page Layout</h3>
                                 <p>A typical layout for articles on the web is to display the text in a single column, placed in the centre of the screen.</p>
                                 <p class="noprint">the first HTML tag that we can select in our stylesheet is the <span class="monospace">&lt;html&gt;</span> tag itself. We will make this the background of our page, setting the background colour to a light grey. We can also set our font and text size here, as all tags are within the <span class="monospace">&lt;html&gt;</span> tag and will <em>inherit</em> that font.</p>
