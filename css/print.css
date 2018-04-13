@@ -17,10 +17,6 @@
                 display: inherit !important;
         }
 
-        #wip {
-                display: none;
-        }
-
         html {
                 background-color: transparent;
                 font-size: 11pt;

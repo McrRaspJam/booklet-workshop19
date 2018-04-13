@@ -1,155 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-        <head>
-                <meta charset="UTF-8">
-                <title>Workshop 19: HTML & CSS</title>
-                <meta name="description" content="Manchester Raspberry Jam Workshop 19, covering HTML and CSS." />
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <meta name="theme-color" content="#e5286d">
-                <meta name="apple-mobile-web-app-status-bar-style" content="#e5286d">
-                <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-                <link rel="manifest" href="manifest.json">
-                <link rel="icon" sizes`="48x48" href="css/icon_48.png">
-                <link rel="icon" sizes`="128x128" href="css/icon_128.png">
-                <link rel="icon" sizes`="192x192" href="css/icon_192.png">
-                <link rel="stylesheet" type="text/css" href="css/master.css" />
-                <link rel="stylesheet" type="text/css" href="css/mobile.css" />
-                <link rel="stylesheet" type="text/css" href="css/print.css" />
+<head>
+        <meta charset="UTF-8">
+        <title>Workshop 19: HTML & CSS</title>
+        <meta name="description" content="Manchester Raspberry Jam Workshop 19, covering HTML and CSS." />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#e5286d">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#e5286d">
+        <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+        <link rel="manifest" href="manifest.json">
+        <link rel="icon" sizes`="48x48" href="css/icon_48.png">
+        <link rel="icon" sizes`="128x128" href="css/icon_128.png">
+        <link rel="icon" sizes`="192x192" href="css/icon_192.png">
+        <link rel="stylesheet" type="text/css" href="css/master.css" />
+        <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+        <link rel="stylesheet" type="text/css" href="css/print.css" />
 
-                <script>
-                          function resizeIframe(obj) {
-                                  obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-                          }
-                </script>
-        </head>
-        <body>
-                <div id="wip">
-                        Work in Progress
+        <script>
+        function resizeIframe(obj) {
+                obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+        }
+        </script>
+</head>
+<body>
+        <header>
+                <!--<img id="logo" src="css/logo_300p.png" alt="Manchester Raspberry Jam Logo"/>-->
+                <a id="mcrraspjam" href="http://www.mcrraspjam.org.uk" target="_blank">Manchester Raspberry Jam</a>
+                <h1 id="title">Workshop 19: HTML & CSS</h1>
+        </header>
+        <main>
+                <div id="downloadlink">
+                        This booklet is available online at <a href="https://mcrraspjam.github.io/booklet-workshop19/" target="_blank">mcrraspjam.github.io/booklet-workshop19</a> (HTML) or <a href="http://bit.ly/mcrraspjam" target="_blank">bit.ly/mcrraspjam</a> (PDF)
                 </div>
-                <header>
-                        <!--<img id="logo" src="css/logo_300p.png" alt="Manchester Raspberry Jam Logo"/>-->
-                        <a id="mcrraspjam" href="http://www.mcrraspjam.org.uk" target="_blank">Manchester Raspberry Jam</a>
-                        <h1 id="title">Workshop 19: HTML & CSS</h1>
-                </header>
-                <main>
-                        <div id="downloadlink">
-                                This booklet is available online at <a href="https://mcrraspjam.github.io/booklet-workshop19/" target="_blank">mcrraspjam.github.io/booklet-workshop19</a> (HTML) or <a href="http://bit.ly/mcrraspjam" target="_blank">bit.ly/mcrraspjam</a> (PDF)
-                        </div>
-                        <section id="contents">
-                                <p>This workshop will teach you how to create basic web pages using HTML and CSS.</p>
-                                <p>Difficulty: Intermediate workshop</p>
-                                <h2>Contents</h2>
-                                <nav>
-                                        <ol class="contents" start="0">
-                                                <li><a href="#introduction">Introduction</a></li>
-                                                <li><a href="#helloworld">Hello, World!</a>
-                                                        <ol class="subcontents noprint">
-                                                                <li><a href="#helloworld-html">Writing the content with HTML</a></li>
-                                                                <li><a href="#helloworld-css">Changing the look with CSS</a></li>
-                                                        </ol>
-                                                </li>
-                                                <li><a href="#devtools">Developer Tools</a></li>
-                                                <li><a href="#wikipedia">Styling a Webpage</a>
-                                                        <ol class="subcontents noprint">
-                                                                <li><a href="#wikipedia-page">Page Layout</a></li>
-                                                                <li><a href="#wikipedia-infobox">Infobox Table</a></li>
-                                                                <li><a href="#wikipedia-image">Floating Images</a></li>
-                                                        </ol>
-                                                </li>
-                                                <li><a href="#homepage">Creating a Personal Homepage</a></li>
-                                        </ol>
-                                </nav>
-                        </section>
-                        <section id="introduction">
-                                <h2>0&emsp;Introduction</h2>
-                                <p>Most pages on the World Wide Web are text documents written in <b>HTML</b> (HyperText Markup Language). A 'stylesheet language' called <b>CSS</b> (Cascading Style Sheets) is often used to change the visuals of the HTML.</p>
-                                <p>In this workshop, we'll learn what both of these languages do, and use them to create our own web pages</p>
+                <section id="contents">
+                        <p>This workshop will teach you how to create basic web pages using HTML and CSS.</p>
+                        <p>Difficulty: Intermediate workshop</p>
+                        <h2>Contents</h2>
+                        <nav>
+                                <ol class="contents" start="0">
+                                        <li><a href="#introduction">Introduction</a></li>
+                                        <li><a href="#helloworld">Hello, World!</a>
+                                                <ol class="subcontents noprint">
+                                                        <li><a href="#helloworld-html">Writing the content with HTML</a></li>
+                                                        <li><a href="#helloworld-css">Changing the look with CSS</a></li>
+                                                </ol>
+                                        </li>
+                                        <li><a href="#devtools">Developer Tools</a></li>
+                                        <li><a href="#wikipedia">Styling a Webpage</a>
+                                                <ol class="subcontents noprint">
+                                                        <li><a href="#wikipedia-page">Page Layout</a></li>
+                                                        <li><a href="#wikipedia-infobox">Infobox Table</a></li>
+                                                        <li><a href="#wikipedia-image">Floating Images</a></li>
+                                                </ol>
+                                        </li>
+                                        <li><a href="#homepage">Creating a Personal Homepage</a></li>
+                                </ol>
+                        </nav>
+                </section>
+                <section id="introduction">
+                        <h2>0&emsp;Introduction</h2>
+                        <p>Most pages on the World Wide Web are text documents written in <b>HTML</b> (HyperText Markup Language). A 'stylesheet language' called <b>CSS</b> (Cascading Style Sheets) is often used to change the visuals of the HTML.</p>
+                        <p>In this workshop, we'll learn what both of these languages do, and use them to create our own web pages</p>
+                        <p class="noscreen">The files for this workshop can be found at <a href="http://bit.ly/mcrraspjam" target="_blank">bit.ly/mcrraspjam</a></p>
 
-                                <h3 class="noprint">What you'll need</h3>
-                                <p class="noprint">Any computer with a web browser and a text editor, preferably one with syntax highlighting.</p>
-                                <h3>About these booklets</h3>
-                                <p>The aim of these booklets is to help you attempt these workshops at home, and to explain concepts in more detail than at the workshop. You don't need to follow these booklets during the workshop, but you can if you'd like to.</p>
-                                <p>When you need to make changes to your code, they'll be presented in <em>listings</em> like the example below:</p>
-                                <iframe class="codeblock" src="code/listing_intro.html"  onload="resizeIframe(this)"></iframe>
+                        <h3 class="noprint">What you'll need</h3>
+                        <p class="noprint">Any computer with a web browser and a text editor, preferably one with syntax highlighting.</p>
+                        <p class="noprint">The files for this workshop can be found <a href="https://drive.google.com/open?id=16zO2YEDwCdGpDIXZgB3duoQTpvyMehwu" target="_blank">here</a>.</p>
+                        <h3>About these booklets</h3>
+                        <p>The aim of these booklets is to help you attempt these workshops at home, and to explain concepts in more detail than at the workshop. You don't need to follow these booklets during the workshop, but you can if you'd like to.</p>
+                        <p>When you need to make changes to your code, they'll be presented in <em>listings</em> like the example below:</p>
+                        <iframe class="codeblock" src="code/listing_intro.html"  onload="resizeIframe(this)"></iframe>
 
-                                <h4>Everything else</h4>
-                                <p class="noprint">The GitHub repo for these notes can be found at <a href="https://github.com/McrRaspJam/booklet-workshop19" target="_blank">github.com/McrRaspJam/booklet-workshop19</a></p>
-                                <p>To allow modification and redistribution of our workshop notes, they are distributed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a> License.</p>
-                                <p>If you get stuck, find errors or have feedback about these booklets, please email me at: <a href="mailto:jam@jackjkelly.com">jam@jackjkelly.com</a></p>
+                        <h4>Everything else</h4>
+                        <p class="noprint">The GitHub repo for these notes can be found at <a href="https://github.com/McrRaspJam/booklet-workshop19" target="_blank">github.com/McrRaspJam/booklet-workshop19</a></p>
+                        <p>To allow modification and redistribution of our workshop notes, they are distributed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a> License.</p>
+                        <p>If you get stuck, find errors or have feedback about these booklets, please email me at: <a href="mailto:jam@jackjkelly.com">jam@jackjkelly.com</a></p>
+                </section>
+                <section id="helloworld">
+                        <h2>1&emsp;Hello, World!</h2>
+                        <p>Boot your computer to the desktop. If you're using a Raspberry Pi that does not log in automatically, the default login is:</p>
+                        <p><b>username:</b> pi<br /> <b>password:</b> raspberry</p>
+                        <p>Once at the desktop, open the text editor of your choice. We will be using <em>Geany</em>, which can be found in the application menu of Raspbian under <span class="monospace">Programming → Geany IDE</span></p>
+                        <figure class="autoimage">
+                                <img src="img/geany.png" alt="The Geany IDE window" />
+                                <p>The Geany IDE window (shown on Windows)</p>
+                        </figure>
+                        <p>The Geany IDE window will open, with a new file already opened. <b>Click</b> <span class="monospace">File → Save As...</span> and save the empty file inside the workshop 19 folder <span class="monospace">~/McrRaspJam<wbr>/Workshop&nbsp;19<wbr>/0_helloworld/</span> with the name <span class="monospace">helloworld.html</span></p>
+                        <section id="helloworld-html">
+                                <h3>Writing the content with HTML</h3>
+                                <p>HTML is a <em>markup language</em>, which means that it determines the content of a webpage. The following code creates a very simple webpage with a single text message:</p>
+                                <iframe class="codeblock" src="code/listing_hw1.html"  onload="resizeIframe(this)"></iframe>
+                                <p>You can try opening the .html file in a web browser now, and you should see 'Hello, World!' appear on screen in the tab that opens.</p>
+                                <p class="noprint">Some additional information about the type of webpage should also be added. It's not too important to know what these changes do yet, but they'll be present in all of our HTML documents.</p>
+                                <iframe class="codeblock noprint" src="code/listing_hw2.html"  onload="resizeIframe(this)"></iframe>
+
+                                <h4>What the code means</h4>
+                                <p>Let's go over the code we just wrote line-by-line, and see what everything does. Following the first line (which just tells any program reading the file what it is) we have our first tag, called html.</p>
+                                <iframe class="codeblock" src="code/listing_hw3.html"  onload="resizeIframe(this)"></iframe>
+                                <p>Tags almost always come in pairs. The first <span class="monospace">&lt;html&gt;</span> opens the tag, and the second, which has a /, closes the tag. We know that anything between these tags is part of the HTML code of our webpage.</p>
+                                <iframe class="codeblock" src="code/listing_hw4.html"  onload="resizeIframe(this)"></iframe>
+                                <p>Next, we have two sets of tags, <span class="monospace">&lt;head&gt;</span> and <span class="monospace">&lt;body&gt;</span>. The 'head' elements are anything that <em>won't</em> be drawn on the page, whereas the <em>body</em> element should all appear visually on the page.</p>
+                                <p>The text 'Hello, World!' has been placed inside the <span class="monospace">&lt;body&gt;</span> tag, so it appears on screen.</p>
+                                <p class="noprint">Given that <span class="monospace">&lt;title&gt;Hello, World!&lt;/title&gt;</span> therefore does not appear on the webpage itself, what do you think it does? Once you've made a guess, try changing it, then save and reload the page and see what changes.</p>
                         </section>
-                        <section id="helloworld">
-                                <h2>1&emsp;Hello, World!</h2>
-                                <p>Boot your computer to the desktop. If you're using a Raspberry Pi that does not log in automatically, the default login is:</p>
-                                <p><b>username:</b> pi<br /> <b>password:</b> raspberry</p>
-                                <p>Once at the desktop, open the text editor of your choice. We will be using <em>Geany</em>, which can be found in the application menu of Raspbian under <span class="monospace">Programming → Geany IDE</span></p>
+                        <section id="helloworld-css">
+                                <h3>Changing the look with CSS</h3>
+                                <p> We've seen that HTML determines what appears on-screen in a webpage. CSS is a <em>style sheet language</em>, which means it takes a HTML page and applys visual styles to it, allowing us to change the layout and presentation of our pages.</p>
+                                <p><b>Create</b> a new file and save it in the same folder as your html file with the name <span class="monospace">style.css</span>. We will write our first <em>rule</em> as follows:</p>
+                                <iframe class="codeblock" src="code/listing_hw5.html"  onload="resizeIframe(this)"></iframe>
+                                <p>In order to make our CSS apply to our webpage, we need to tell the HTML code to load the stylesheet. We do that by adding a special tag to the page head.</p>
+                                <iframe class="codeblock" src="code/listing_hw6.html"  onload="resizeIframe(this)"></iframe>
+                                <p class="noprint">This tag says that we're going to load a stylesheet, and that it's found in the file named 'style.css'.</p>
+                                <p>Now, when you save and reload the page, several things should have changed. What 3 things have happened?</p>
+                                <p>In CSS, parts of the HTML code are chosen using <em>selectors</em>, and then <em>rules</em> are applied to anything that matches the selector. In our small piece of CSS, the selector is <span class="monospace">body</span>. This looks for all body tags (of which there is only one) and applys the rules to them.</p>
+                                <p>The text in our page is inside the <span class="monospace">body</span> tag, so if we added a rule to change it, all text we added to our site would be changed. Let's add more tags in our HTML, so we can style specific bits of text.</p>
+                                <iframe class="codeblock" src="code/listing_hw7.html"  onload="resizeIframe(this)"></iframe>
+                                <p><span class="monospace">h1</span> means 'Heading 1', and suggests that the text within is the page title. We can add the following CSS to change the size and colour of the text. (watch out for the american spelling 'color')</p>
+                                <iframe class="codeblock" src="code/listing_hw8.html"  onload="resizeIframe(this)"></iframe>
+                                <p>We added an 'id' to our <span class="monospace">&lt;span&gt;</span> tag which we can use to style just one tag instead of all span tags on the page. To style an id instead of a tag, start the selector with <span class="monospace">#</span>.</p>
+                                <iframe class="codeblock" src="code/listing_hw9.html"  onload="resizeIframe(this)"></iframe>
                                 <figure class="autoimage">
-                                        <img src="img/geany.png" alt="The Geany IDE window" />
-                                        <p>The Geany IDE window (shown on Windows)</p>
+                                        <img src="img/helloworld.png" alt="The completed Hello, World! webpage" />
+                                        <p>The completed 'Hello, World!'' webpage</p>
                                 </figure>
-                                <p>The Geany IDE window will open, with a new file already opened. <b>Click</b> <span class="monospace">File → Save As...</span> and save the empty file inside the workshop 19 folder <span class="monospace">~/McrRaspJam<wbr>/Workshop&nbsp;19<wbr>/0_helloworld/</span> with the name <span class="monospace">helloworld.html</span></p>
-                                <section id="helloworld-html">
-                                        <h3>Writing the content with HTML</h3>
-                                        <p>HTML is a <em>markup language</em>, which means that it determines the content of a webpage. The following code creates a very simple webpage with a single text message:</p>
-                                        <iframe class="codeblock" src="code/listing_hw1.html"  onload="resizeIframe(this)"></iframe>
-                                        <p>You can try opening the .html file in a web browser now, and you should see 'Hello, World!' appear on screen in the tab that opens.</p>
-                                        <p class="noprint">Some additional information about the type of webpage should also be added. It's not too important to know what these changes do yet, but they'll be present in all of our HTML documents.</p>
-                                        <iframe class="codeblock noprint" src="code/listing_hw2.html"  onload="resizeIframe(this)"></iframe>
-
-                                        <h4>What the code means</h4>
-                                        <p>Let's go over the code we just wrote line-by-line, and see what everything does. Following the first line (which just tells any program reading the file what it is) we have our first tag, called html.</p>
-                                        <iframe class="codeblock" src="code/listing_hw3.html"  onload="resizeIframe(this)"></iframe>
-                                        <p>Tags almost always come in pairs. The first <span class="monospace">&lt;html&gt;</span> opens the tag, and the second, which has a /, closes the tag. We know that anything between these tags is part of the HTML code of our webpage.</p>
-                                        <iframe class="codeblock" src="code/listing_hw4.html"  onload="resizeIframe(this)"></iframe>
-                                        <p>Next, we have two sets of tags, <span class="monospace">&lt;head&gt;</span> and <span class="monospace">&lt;body&gt;</span>. The 'head' elements are anything that <em>won't</em> be drawn on the page, whereas the <em>body</em> element should all appear visually on the page.</p>
-                                        <p>The text 'Hello, World!' has been placed inside the <span class="monospace">&lt;body&gt;</span> tag, so it appears on screen.
-                                        <p class="noprint">Given that <span class="monospace">&lt;title&gt;Hello, World!&lt;/title&gt;</span> therefore does not appear on the webpage itself, what do you think it does? Once you've made a guess, try changing it, then save and reload the page and see what changes.</p>
-                                </section>
-                                <section id="helloworld-css">
-                                        <h3>Changing the look with CSS</h3>
-                                        <p> We've seen that HTML determines what appears on-screen in a webpage. CSS is a <em>style sheet language</em>, which means it takes a HTML page and applys visual styles to it, allowing us to change the layout and presentation of our pages.</p>
-                                        <p><b>Create</b> a new file and save it in the same folder as your html file with the name <span class="monospace">style.css</span>. We will write our first <em>rule</em> as follows:</p>
-                                        <iframe class="codeblock" src="code/listing_hw5.html"  onload="resizeIframe(this)"></iframe>
-                                        <p>In order to make our CSS apply to our webpage, we need to tell the HTML code to load the stylesheet. We do that by adding a special tag to the page head.</p>
-                                        <iframe class="codeblock" src="code/listing_hw6.html"  onload="resizeIframe(this)"></iframe>
-                                        <p class="noprint">This tag says that we're going to load a stylesheet, and that it's found in the file named 'style.css'.</p>
-                                        <p>Now, when you save and reload the page, several things should have changed. What 3 things have happened?
-                                        <p>In CSS, parts of the HTML code are chosen using <em>selectors</em>, and then <em>rules</em> are applied to anything that matches the selector. In our small piece of CSS, the selector is <span class="monospace">body</span>. This looks for all body tags (of which there is only one) and applys the rules to them.</p>
-                                        <p>The text in our page is inside the <span class="monospace">body</span> tag, so if we added a rule to change it, all text we added to our site would be changed. Let's add more tags in our HTML, so we can style specific bits of text.</p>
-                                        <iframe class="codeblock" src="code/listing_hw7.html"  onload="resizeIframe(this)"></iframe>
-                                        <p><span class="monospace">h1</span> means 'Heading 1', and suggests that the text within is the page title. We can add the following CSS to change the size and colour of the text. (watch out for the american spelling 'color')</p>
-                                        <iframe class="codeblock" src="code/listing_hw8.html"  onload="resizeIframe(this)"></iframe>
-                                        <p>We added an 'id' to our <span class="monospace">&lt;span&gt;</span> tag which we can use to style just one tag instead of all span tags on the page. To style an id instead of a tag, start the selector with <span class="monospace">#</span>.</p>
-                                        <iframe class="codeblock" src="code/listing_hw9.html"  onload="resizeIframe(this)"></iframe>
-                                        <figure class="autoimage">
-                                                <img src="img/helloworld.png" alt="The completed Hello, World! webpage" />
-                                                <p>The completed 'Hello, World!'' webpage</p>
-                                        </figure>
-                                </section>
                         </section>
-                        <section id="devtools">
-                                <h2>2&emsp;Developer Tools</h2>
-                                <p class="noscreen"><em>Read more about developer tools on the online notes</em></p>
-                                <p class="noprint">Included in most web browsers are a set of tool menus for web developers. These tools are quite comprehensive, and include things like debuggers for Javascript scripting and performance monitors for complex 2D and 3D content. We're going to use the inspector tool to view individual elements and which bits of CSS are affecting them.</p>
-                                <p class="noprint" style="font-size:0.9rem; font-style:italic">The following instructions are for Chromium/Chrome, but can also be followed with Mozilla Firefox, and the process should be similar on other browsers.</p>
-                                <p class="noprint">If you haven't already, open these notes in your browser, and press <span class="monospace">F12</span> to bring up the developer tools panel. The panel should open up in the <em>elements/inspector</em> tab, and a copy of the page's source code should be visible underneath.</p>
-                                <figure class="autoimage-noenlarge noprint">
-                                        <img src="img/icon-selector.png" alt="" />
-                                        <p>The 'Select element' button</p>
-                                </figure>
-                                <p class="noprint">Click the button in the top left of the panel. This allows you to select elements on the page using the mouse. You can hover over elements to see their CSS <em>Box Model</em>.</p>
-                                <p class="noprint">In Chromium, the element is hightlighted in blue, and the margin space is highlighted in orange. Another part of the box model is <em>padding</em>. Try find an element in this page which has padding. How does padding differ to margin?</p>
-                        </section>
-                        <section id="wikipedia">
-                                <h2>3&emsp;Styling a Webpage</h2>
-                                <p>Let's try creating a stylesheet for a more complete web page. Go to  <span class="monospace">~/McrRaspJam<wbr>/Workshop&nbsp;19<wbr>/1_wikipedia/</span> and then open the file <span class="monospace">raspberrypi.html</span> in your text editor.</p>
-                                <p>This file is a truncated copy of the <a href="https://en.wikipedia.org/wiki/Raspberry_Pi" target="_blank">Wikipedia entry</a> for the Raspberry Pi. The page has the same information as the Wikipedia page it came from, but it currently has no stylesheet applied to it. We're going to design our own stylesheet for the page.</p>
-                                <figure class="autoimage">
-                                        <img src="img/wiki-before.png" alt="" />
-                                        <p>The copy of Wikipedia's Raspberry Pi entry</p>
-                                </figure>
-                                <p>Start by taking a look at the head of the HTML file. You can see that a stylesheet should be being loaded with the line <span class="monospace">&lt;link rel="stylesheet" href="style.css"&gt;</span> but there isn't a style.css file in the folder yet. Create a new file called <span class="monospace">style.css</span> and open it in your text editor.</p>
-                                <p class="noprint">From here on, the notes will provide an example of how a stylesheet could be, but feel free to change sizes, spacing and colours how you prefer.</p>
-                                <h3 id="wikipedia-page">Page Layout</h3>
+                </section>
+                <section id="devtools">
+                        <h2>2&emsp;Developer Tools</h2>
+                        <p class="noscreen"><em>Read more about developer tools on the online notes</em></p>
+                        <p class="noprint">Included in most web browsers are a set of tool menus for web developers. These tools are quite comprehensive, and include things like debuggers for Javascript scripting and performance monitors for complex 2D and 3D content. We're going to use the inspector tool to view individual elements and which bits of CSS are affecting them.</p>
+                        <p class="noprint" style="font-size:0.9rem; font-style:italic">The following instructions are for Chromium/Chrome, but can also be followed with Mozilla Firefox, and the process should be similar on other browsers.</p>
+                        <p class="noprint">If you haven't already, open these notes in your browser, and press <span class="monospace">F12</span> to bring up the developer tools panel. The panel should open up in the <em>elements/inspector</em> tab, and a copy of the page's source code should be visible underneath.</p>
+                        <figure class="autoimage-noenlarge noprint">
+                                <img src="img/icon-selector.png" alt="" />
+                                <p>The 'Select element' button</p>
+                        </figure>
+                        <p class="noprint">Click the button in the top left of the panel. This allows you to select elements on the page using the mouse. You can hover over elements to see their CSS <em>Box Model</em>.</p>
+                        <p class="noprint">In Chromium, the element is hightlighted in blue, and the margin space is highlighted in orange. Another part of the box model is <em>padding</em>. Try find an element in this page which has padding. How does padding differ to margin?</p>
+                </section>
+                <section id="wikipedia">
+                        <h2>3&emsp;Styling a Webpage</h2>
+                        <p>Let's try creating a stylesheet for a more complete web page. Go to  <span class="monospace">~/McrRaspJam<wbr>/Workshop&nbsp;19<wbr>/1_wikipedia/</span> and then open the file <span class="monospace">raspberrypi.html</span> in your text editor.</p>
+                        <p>This file is a truncated copy of the <a href="https://en.wikipedia.org/wiki/Raspberry_Pi" target="_blank">Wikipedia entry</a> for the Raspberry Pi. The page has the same information as the Wikipedia page it came from, but it currently has no stylesheet applied to it. We're going to design our own stylesheet for the page.</p>
+                        <figure class="autoimage">
+                                <img src="img/wiki-before.png" alt="" />
+                                <p>The copy of Wikipedia's Raspberry Pi entry</p>
+                        </figure>
+                        <p>Start by taking a look at the head of the HTML file. You can see that a stylesheet should be being loaded with the line <span class="monospace">&lt;link rel="stylesheet" href="style.css"&gt;</span> but there isn't a style.css file in the folder yet. Create a new file called <span class="monospace">style.css</span> and open it in your text editor.</p>
+                        <p class="noprint">From here on, the notes will provide an example of how a stylesheet could be, but feel free to change sizes, spacing and colours how you prefer.</p>
+                        <section id="wikipedia-page">
+                                <h3>Page Layout</h3>
                                 <p>A typical layout for articles on the web is to display the text in a single column, placed in the centre of the screen.</p>
                                 <p class="noprint">the first HTML tag that we can select in our stylesheet is the <span class="monospace">&lt;html&gt;</span> tag itself. We will make this the background of our page, setting the background colour to a light grey. We can also set our font and text size here, as all tags are within the <span class="monospace">&lt;html&gt;</span> tag and will <em>inherit</em> that font.</p>
                                 <iframe class="codeblock" src="code/listing_wi1.html"  onload="resizeIframe(this)"></iframe>
@@ -160,7 +160,9 @@
                                         <img src="img/wiki-body.png" alt="" />
                                         <p>The page after adding html/body rules</p>
                                 </figure>
-                                <h3 id="wikipedia-infobox">Infobox Table</h3>
+                        </section>
+                        <section id="wikipedia-infobox">
+                                <h3>Infobox Table</h3>
                                 <p>The infobox is a feature on many Wikipedia pages, it is a simple table that outlines many pieces of information about the subject. We won't go into the details of HTML tables today, but let's decorate a few parts of it.</p>
                                 <p>We'll start by putting a border around the table, so it is clear where it begins and ends on the page. A CSS border has three properties; the thickness of the line, the style (solid, dashed, double, etc) and the colour. We'll also give it a background colour and center it in the page.</p>
                                 <iframe class="codeblock" src="code/listing_wi3.html"  onload="resizeIframe(this)"></iframe>
@@ -180,7 +182,9 @@
                                         <li>red <span class="swatch" style="background-color: red"></span></li>
                                 </ul>
                                 <p class="noprint">To select a class, start the selector with a <span class="monospace">.</span>, e.g. <span class="monospace">.os-other {</span></p>
-                                <h3 id="wikipedia-image">Floating Images</h3>
+                        </section>
+                        <section id="wikipedia-image">
+                                <h3>Floating Images</h3>
                                 <p>On Wikipedia, images sit to the right of the text on the page. This is very easy to do with CSS with the <span class="monospace">float</span> rule. We'll also add a border.</p>
                                 <iframe class="codeblock" src="code/listing_wi6.html"  onload="resizeIframe(this)"></iframe>
                                 <figure class="autoimage">
@@ -188,9 +192,16 @@
                                         <p>Wikipedia page with a completed stylesheet</p>
                                 </figure>
                         </section>
-                        <section id="homepage">
-                                <h2>4&emsp;Creating a Personal Homepage</h2>
-                        </section>
-                </main>
-        </body>
+                </section>
+                <section id="homepage">
+                        <h2>4&emsp;Creating a Personal Homepage</h2>
+                        <p>For our final webpage today, we'll be creating a personalised webpage. You can make it about yourself if you'd like, the version in the notes will be about Babbage the Bear, the Raspberry Pi's official mascot.</p>
+                        <figure class="autoimage noprint">
+                                <img src="img/babbage.jpg" alt="" style="max-height:480px" />
+                                <p>Babbage the Bear in full Raspberry Pi regalia.</p>
+                        </figure>
+                        <h3></h3>
+                </section>
+        </main>
+</body>
 </html>
