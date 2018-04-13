@@ -1,4 +1,33 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald|Zilla+Slab:400,400i,600');
+/*@import url('https://fonts.googleapis.com/css?family=Oswald|Zilla+Slab:400,400i,600');*/
+
+@font-face {
+        font-family: 'Oswald';
+        src: url('oswald/Oswald-Regular.ttf') format('truetype');
+}
+
+@font-face {
+        font-family: 'Zilla Slab';
+        font-weight: normal;
+        font-style: normal;
+        src: url('zillaslab/ZillaSlab-Regular.woff2') format('woff2'),
+        url('zillaslab/ZillaSlab-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+        font-family: 'Zilla Slab';
+        font-weight: bold;
+        font-style: normal;
+        src: url('zillaslab/ZillaSlab-SemiBold.woff2') format('woff2'),
+        url('zillaslab/ZillaSlab-SemiBold.ttf')  format('truetype');
+}
+
+@font-face {
+        font-family: 'Zilla Slab';
+        font-weight: normal;
+        font-style: italic;
+        src: url('zillaslab/ZillaSlab-Italic.woff2') format('woff2'),
+        url('zillaslab/ZillaSlab-Italic.ttf')  format('truetype');
+}
 
 html {
         min-width: 320px;
